@@ -1120,6 +1120,15 @@ hr.divider { border: none; border-top: 1px solid #2a2a4a; margin: 0; }
   animation: ob-pulse 1.4s ease-in-out infinite;
 }
 
+.ob-arrow--right-ext {
+  position: absolute;
+  right: -26px;
+  top: 32px;
+  font-size: 24px;
+  color: #7eb3ff;
+  animation: ob-pulse 1.4s ease-in-out infinite;
+}
+
 @keyframes ob-pulse {
   0%, 100% { opacity: 0.45; }
   50%       { opacity: 1; }

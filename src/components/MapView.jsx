@@ -23,10 +23,11 @@ import PpriPopup from './PpriPopup.jsx'
 import AccesPopup from './AccesPopup.jsx'
 import FicheParking from './FicheParking.jsx'
 import FicheParkingSimple from './FicheParkingSimple.jsx'
+import MapLegend from './MapLegend.jsx'
 import { TYPES_MANUELS } from './ManualParkingForm.jsx'
 import {
   GOOGLE_SAT_URL, IGN_WMTS_URL, IGN_LAYER_2024, IGN_LAYER_IRC_2024,
-  MAP_CENTER, MAP_ZOOM, DEMO_BBOX,
+  MAP_CENTER, MAP_ZOOM, DEMO_BBOX, DEMO_CLIENT,
 } from '../config.js'
 
 // Fix default icon paths broken by Vite bundling
@@ -312,7 +313,7 @@ export default function MapView({
   features, selectedFeature, clickLatlng, onSelectFeature,
   basemap, onBasemapChange, editingGeom, geomVersion, onGeomEdited, onCancelGeomEdit,
   onCloseFeature, onEditFeature, onEditGeomFeature,
-  refLayers, onRefCountsUpdate, aleaLayers,
+  refLayers, onRefCountsUpdate, aleaLayers, onToggleAleaLayer,
   zonesOrigine, showZonesOrigine,
   accesFeatures, routesFeatures, showAcces, selectedAccesId, onSelectAcces,
   ppriFeatures, showPpriClassement, onPpriReclassify,
@@ -399,9 +400,15 @@ export default function MapView({
         </div>
       )}
 
+      {DEMO_CLIENT && (
+        <MapLegend aleaLayers={aleaLayers} onToggleAleaLayer={onToggleAleaLayer} />
+      )}
+
       <MapContainer
-        center={MAP_CENTER}
-        zoom={MAP_ZOOM}
+        {...(DEMO_CLIENT
+          ? { bounds: [[DEMO_BBOX[0], DEMO_BBOX[1]], [DEMO_BBOX[2], DEMO_BBOX[3]]], boundsOptions: { padding: [40, 40] } }
+          : { center: MAP_CENTER, zoom: MAP_ZOOM }
+        )}
         style={{ width: '100%', height: '100%' }}
         preferCanvas={false}
       >

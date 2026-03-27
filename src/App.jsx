@@ -396,6 +396,7 @@ export default function App() {
           refLayers={refLayers}
           onRefCountsUpdate={handleRefCountsUpdate}
           aleaLayers={aleaLayers}
+          onToggleAleaLayer={handleToggleAleaLayer}
           zonesOrigine={zonesOrigine}
           showZonesOrigine={showZonesOrigine}
           accesFeatures={accesFeatures}
