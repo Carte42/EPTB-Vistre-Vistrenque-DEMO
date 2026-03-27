@@ -644,7 +644,7 @@ export default function MapView({
           )
         })}
 
-        {polyFeatures.length > 0 && (
+        {!DEMO_CLIENT && polyFeatures.length > 0 && (
           <GeoJSON
             key={geoJsonKey + '-poly'}
             data={polyGeoJSON}
@@ -653,7 +653,7 @@ export default function MapView({
           />
         )}
 
-        {pointFeatures.map((feat, i) => {
+        {!DEMO_CLIENT && pointFeatures.map((feat, i) => {
           const stars = feat.properties?.ia_etoiles ?? 0
           const style = STAR_STYLES[stars] || STAR_STYLES[0]
           const [lng, lat] = feat.geometry.coordinates
@@ -666,7 +666,7 @@ export default function MapView({
         })}
 
         {/* Couche saisie manuelle */}
-        {manualFeatures?.length > 0 && (
+        {!DEMO_CLIENT && manualFeatures?.length > 0 && (
           <GeoJSON
             key={`manual-${manualFeatures.length}`}
             data={{ type: 'FeatureCollection', features: manualFeatures }}
@@ -680,19 +680,19 @@ export default function MapView({
           />
         )}
 
-        <GeomEditorControl
+        {!DEMO_CLIENT && <GeomEditorControl
           editingGeom={editingGeom}
           onGeomEdited={onGeomEdited}
           onCancel={onCancelGeomEdit}
-        />
+        />}
 
-        <ManualDrawController
+        {!DEMO_CLIENT && <ManualDrawController
           active={isDrawingManual}
           onDrawn={onManualDrawn}
           onCancel={onManualCancelDraw}
-        />
+        />}
 
-        {selectedFeature && clickLatlng && (
+        {!DEMO_CLIENT && selectedFeature && clickLatlng && (
           <FloatingPanel latlng={clickLatlng} wrapperRef={wrapperRef}>
             <FeatureDetail
               feature={selectedFeature}
