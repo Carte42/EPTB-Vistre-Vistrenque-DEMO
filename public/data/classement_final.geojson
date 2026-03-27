@@ -698,12 +698,12 @@
         "ppri_zone_brute": "Prescriptions",
         "classe_ppri": "exposé",
         "justif_ppri": "En zone PPRI de prescription — à analyser finement avant classement refuge",
-        "justif_manuelle": "Limitrophe zone d'interdiction au PPRI",
+        "justif_manuelle": "Aire limitrophe d'une zone d'interdiction PPRI",
         "niveau": null,
         "classe_finale": "aire_exposee",
         "classe_label": "Aire exposée",
         "capacite_retenue": 85,
-        "justif_finale": "Situé en zone PPRI d'interdiction (Prescriptions) — parking exposé aux crues, non mobilisable comme refuge."
+        "justif_finale": "Situé en zone PPRI de prescriptions, limitrophe d'une zone d'interdiction — parking exposé aux crues, non mobilisable comme refuge."
       }
     },
     {
@@ -2621,12 +2621,12 @@
         "ppri_zone_brute": "Prescriptions",
         "classe_ppri": "exposé",
         "justif_ppri": "En zone PPRI de prescription — à analyser finement avant classement refuge",
-        "justif_manuelle": "Limitrophe zone interdiction PPRI",
+        "justif_manuelle": "Aire limitrophe d'une zone d'interdiction PPRI",
         "niveau": null,
         "classe_finale": "aire_exposee",
         "classe_label": "Aire exposée",
         "capacite_retenue": 15,
-        "justif_finale": "Situé en zone PPRI d'interdiction (Prescriptions) — parking exposé aux crues, non mobilisable comme refuge."
+        "justif_finale": "Situé en zone PPRI de prescriptions, limitrophe d'une zone d'interdiction — parking exposé aux crues, non mobilisable comme refuge."
       }
     },
     {
@@ -3562,12 +3562,12 @@
         "ppri_zone_brute": "Prescriptions",
         "classe_ppri": "exposé",
         "justif_ppri": "En zone PPRI de prescription — à analyser finement avant classement refuge",
-        "justif_manuelle": "Zone limitrophe interdiction PPRI",
+        "justif_manuelle": "Aire limitrophe d'une zone d'interdiction PPRI",
         "niveau": null,
         "classe_finale": "aire_exposee",
         "classe_label": "Aire exposée",
         "capacite_retenue": 12,
-        "justif_finale": "Situé en zone PPRI d'interdiction (Prescriptions) — parking exposé aux crues, non mobilisable comme refuge."
+        "justif_finale": "Situé en zone PPRI de prescriptions, limitrophe d'une zone d'interdiction — parking exposé aux crues, non mobilisable comme refuge."
       }
     },
     {
