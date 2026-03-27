@@ -126,7 +126,7 @@ export default function Onboarding() {
 
       {/* ── Étape 4 : légende / couches ── */}
       {step === 4 && (
-        <div className="ob-card ob-card--left-low" style={{ top: cardTop4 }}>
+        <div className="ob-card ob-card--right-low">
           <div className="ob-glow" />
           <div className="ob-body">
             <div className="ob-emoji">🗂</div>

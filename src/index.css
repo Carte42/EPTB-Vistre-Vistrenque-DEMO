@@ -1064,6 +1064,12 @@ hr.divider { border: none; border-top: 1px solid #2a2a4a; margin: 0; }
 
 .ob-card--left { top: 230px; left: 336px; animation: ob-float-left 3s ease-in-out infinite; }
 .ob-card--left-low { top: 430px; left: 336px; animation: ob-float-left 3s ease-in-out infinite; }
+.ob-card--right-low { bottom: 40px; right: 260px; animation: ob-float-right 3s ease-in-out infinite; }
+
+@keyframes ob-float-right {
+  0%, 100% { transform: translateX(0); }
+  50%       { transform: translateX(5px); }
+}
 
 .ob-glow {
   position: absolute;
