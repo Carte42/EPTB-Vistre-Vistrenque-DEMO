@@ -13,8 +13,8 @@ export default function Sidebar({
       <div className="header">
         <img src={logo} alt="Carte42" />
         <h1>
-          Détection Parkings
-          <span>Analyse automatique des emprises de stationnement</span>
+          Consultation 2026-03
+          <span>Analyse des aires de stationnement du territoire au regard du risque inondation</span>
         </h1>
       </div>
 

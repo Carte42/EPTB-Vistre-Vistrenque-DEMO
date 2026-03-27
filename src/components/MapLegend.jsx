@@ -54,8 +54,8 @@ export default function MapLegend({ aleaLayers, onToggleAleaLayer }) {
           <span style={{ marginLeft: 'auto', fontSize: 12, fontWeight: 700, opacity: 0.8 }}>{ppriActive ? 'ON' : 'OFF'}</span>
         </button>
         {ppriActive && (
-          <div style={{ marginBottom: 6 }}>
-            <img src={PPRI_LEGEND} alt="Légende PPRI" style={{ maxWidth: '100%', borderRadius: 4 }} />
+          <div style={{ marginBottom: 6, background: '#fff', borderRadius: 4, padding: '6px 8px' }}>
+            <img src={PPRI_LEGEND} alt="Légende PPRI" style={{ maxWidth: '100%', display: 'block' }} />
           </div>
         )}
 
