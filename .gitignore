@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.pkl
+*.pyc
+__pycache__/
+.env.local
+.dev.log
+cache/
+.claude/
+*.lnk
+*.pdf
+TRAVAIL.md

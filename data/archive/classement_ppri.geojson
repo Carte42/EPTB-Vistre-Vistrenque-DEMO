@@ -1,0 +1,3217 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4732883,
+              43.8187916
+            ],
+            [
+              4.4732952,
+              43.8189881
+            ],
+            [
+              4.4730661,
+              43.8189696
+            ],
+            [
+              4.4730152,
+              43.8189655
+            ],
+            [
+              4.4729994,
+              43.8189002
+            ],
+            [
+              4.4730562,
+              43.8188945
+            ],
+            [
+              4.4730505,
+              43.8188034
+            ],
+            [
+              4.4732253,
+              43.8187947
+            ],
+            [
+              4.4732883,
+              43.8187916
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_001",
+        "source": "osm",
+        "id_osm": 48316086,
+        "nom": "Place Saint-Genest",
+        "commune": "",
+        "surface_m2": 414,
+        "nb_vehicules_approx": 17,
+        "nb_vehicules_corrige": 12,
+        "type_parking": "surface",
+        "statut_foncier": "public",
+        "_statut_auto": "inconnu",
+        "categorie": "residentiel",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "Prescriptions",
+        "classe_ppri": "a_analyser",
+        "justif_ppri": "En zone PPRI de prescription — à analyser finement avant classement refuge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4962243,
+              43.8257357
+            ],
+            [
+              4.4962028,
+              43.8256641
+            ],
+            [
+              4.4961572,
+              43.8253738
+            ],
+            [
+              4.4961492,
+              43.8252577
+            ],
+            [
+              4.4961653,
+              43.8251358
+            ],
+            [
+              4.4962316,
+              43.825087
+            ],
+            [
+              4.4971016,
+              43.8249986
+            ],
+            [
+              4.4971546,
+              43.8250547
+            ],
+            [
+              4.4972665,
+              43.8251347
+            ],
+            [
+              4.4967311,
+              43.8251684
+            ],
+            [
+              4.4968398,
+              43.8258222
+            ],
+            [
+              4.4966052,
+              43.8258034
+            ],
+            [
+              4.4962243,
+              43.8257357
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_002",
+        "source": "osm",
+        "id_osm": 238797474,
+        "nom": "Parking Auchan",
+        "commune": "",
+        "surface_m2": 4399,
+        "nb_vehicules_approx": 176,
+        "nb_vehicules_corrige": 170,
+        "type_parking": "surface",
+        "statut_foncier": "mixte",
+        "_statut_auto": "inconnu",
+        "categorie": "commercial",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5003844,
+              43.8276639
+            ],
+            [
+              4.5007493,
+              43.8276456
+            ],
+            [
+              4.5007561,
+              43.8277157
+            ],
+            [
+              4.5007811,
+              43.827975
+            ],
+            [
+              4.5006219,
+              43.827983
+            ],
+            [
+              4.5006009,
+              43.827765
+            ],
+            [
+              4.5003952,
+              43.8277753
+            ],
+            [
+              4.5003844,
+              43.8276639
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_003",
+        "source": "osm",
+        "id_osm": 565015497,
+        "nom": "Parking intérieur EHPAD Villa Rediciano - a supprimer",
+        "commune": "",
+        "surface_m2": 676,
+        "nb_vehicules_approx": 27,
+        "nb_vehicules_corrige": 23,
+        "type_parking": "surface",
+        "statut_foncier": "prive",
+        "_statut_auto": "prive",
+        "categorie": "residentiel",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5007493,
+              43.8276456
+            ],
+            [
+              4.5007561,
+              43.8277157
+            ],
+            [
+              4.5007811,
+              43.827975
+            ],
+            [
+              4.5008331,
+              43.8283699
+            ],
+            [
+              4.5009868,
+              43.8283612
+            ],
+            [
+              4.5010217,
+              43.8281532
+            ],
+            [
+              4.5010284,
+              43.8279559
+            ],
+            [
+              4.5010243,
+              43.8277614
+            ],
+            [
+              4.501023,
+              43.8276288
+            ],
+            [
+              4.5007493,
+              43.8276456
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_004",
+        "source": "osm",
+        "id_osm": 565015498,
+        "nom": "Parking EHPAD Villa Rediciano",
+        "commune": "",
+        "surface_m2": 1507,
+        "nb_vehicules_approx": 60,
+        "nb_vehicules_corrige": 40,
+        "type_parking": "surface",
+        "statut_foncier": "public",
+        "_statut_auto": "public",
+        "categorie": "equip_public",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4996182,
+              43.8295663
+            ],
+            [
+              4.4995773,
+              43.8295222
+            ],
+            [
+              4.4995746,
+              43.8294797
+            ],
+            [
+              4.4998683,
+              43.8294574
+            ],
+            [
+              4.4999434,
+              43.8293278
+            ],
+            [
+              4.5001955,
+              43.8292417
+            ],
+            [
+              4.5002545,
+              43.8292446
+            ],
+            [
+              4.5003363,
+              43.8292736
+            ],
+            [
+              4.5003994,
+              43.8293636
+            ],
+            [
+              4.4998522,
+              43.8295561
+            ],
+            [
+              4.4996182,
+              43.8295663
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_005",
+        "source": "osm",
+        "id_osm": 565015500,
+        "nom": "Parking école élémentaire Marcel Pagnol",
+        "commune": "",
+        "surface_m2": 1001,
+        "nb_vehicules_approx": 40,
+        "nb_vehicules_corrige": 28,
+        "type_parking": "surface",
+        "statut_foncier": "public",
+        "_statut_auto": "inconnu",
+        "categorie": "scolaire",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4992219,
+              43.8293549
+            ],
+            [
+              4.4994597,
+              43.8293465
+            ],
+            [
+              4.4995831,
+              43.829269
+            ],
+            [
+              4.4995277,
+              43.8287773
+            ],
+            [
+              4.4991589,
+              43.8287986
+            ],
+            [
+              4.4992219,
+              43.8293549
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_006",
+        "source": "osm",
+        "id_osm": 565015501,
+        "nom": "Parking école maternelle Marcel Pagnol",
+        "commune": "",
+        "surface_m2": 1814,
+        "nb_vehicules_approx": 73,
+        "nb_vehicules_corrige": 50,
+        "type_parking": "surface",
+        "statut_foncier": "public",
+        "_statut_auto": "inconnu",
+        "categorie": "scolaire",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4726063,
+              43.8208617
+            ],
+            [
+              4.4728571,
+              43.8208269
+            ],
+            [
+              4.472845,
+              43.8207156
+            ],
+            [
+              4.4728504,
+              43.820166
+            ],
+            [
+              4.4725607,
+              43.8201699
+            ],
+            [
+              4.4725621,
+              43.8204069
+            ],
+            [
+              4.4726063,
+              43.8208617
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_007",
+        "source": "osm",
+        "id_osm": 680603015,
+        "nom": "Parking",
+        "commune": "",
+        "surface_m2": 1648,
+        "nb_vehicules_approx": 66,
+        "nb_vehicules_corrige": 57,
+        "type_parking": "surface",
+        "statut_foncier": "public",
+        "_statut_auto": "inconnu",
+        "categorie": "loisirs",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "Interdiction",
+        "classe_ppri": "exposé",
+        "justif_ppri": "En zone PPRI d'interdiction — parking exposé, non mobilisable"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4726828,
+              43.8209536
+            ],
+            [
+              4.4729362,
+              43.8216764
+            ],
+            [
+              4.4731817,
+              43.8216126
+            ],
+            [
+              4.4732206,
+              43.8215681
+            ],
+            [
+              4.4732232,
+              43.8215255
+            ],
+            [
+              4.4730341,
+              43.8209778
+            ],
+            [
+              4.4728799,
+              43.8208965
+            ],
+            [
+              4.4726828,
+              43.8209536
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_008",
+        "source": "osm",
+        "id_osm": 680603016,
+        "nom": "Parking",
+        "commune": "",
+        "surface_m2": 2137,
+        "nb_vehicules_approx": 85,
+        "nb_vehicules_corrige": 85,
+        "type_parking": "surface",
+        "statut_foncier": "public",
+        "_statut_auto": "inconnu",
+        "categorie": "loisirs",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "Interdiction",
+        "classe_ppri": "exposé",
+        "justif_ppri": "En zone PPRI d'interdiction — parking exposé, non mobilisable"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4678991,
+              43.821659
+            ],
+            [
+              4.4688191,
+              43.8217006
+            ],
+            [
+              4.4688687,
+              43.8214703
+            ],
+            [
+              4.4687212,
+              43.8214578
+            ],
+            [
+              4.4687654,
+              43.8212381
+            ],
+            [
+              4.4688083,
+              43.8210649
+            ],
+            [
+              4.468815,
+              43.8209691
+            ],
+            [
+              4.4683175,
+              43.820944
+            ],
+            [
+              4.4682866,
+              43.8212962
+            ],
+            [
+              4.4681083,
+              43.8212846
+            ],
+            [
+              4.4680908,
+              43.8215158
+            ],
+            [
+              4.4679084,
+              43.8215071
+            ],
+            [
+              4.4678991,
+              43.821659
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_009",
+        "source": "osm",
+        "id_osm": 680603017,
+        "nom": "Parking Intermarché",
+        "commune": "",
+        "surface_m2": 4183,
+        "nb_vehicules_approx": 167,
+        "nb_vehicules_corrige": 85,
+        "type_parking": "surface",
+        "statut_foncier": "mixte",
+        "_statut_auto": "inconnu",
+        "categorie": "commercial",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "Prescriptions",
+        "classe_ppri": "a_analyser",
+        "justif_ppri": "En zone PPRI de prescription — à analyser finement avant classement refuge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5044238,
+              43.8161486
+            ],
+            [
+              4.5053444,
+              43.816135
+            ],
+            [
+              4.5053438,
+              43.8161019
+            ],
+            [
+              4.5053379,
+              43.8159004
+            ],
+            [
+              4.5054291,
+              43.8158997
+            ],
+            [
+              4.5054337,
+              43.8162369
+            ],
+            [
+              4.5054486,
+              43.8162837
+            ],
+            [
+              4.5052904,
+              43.8164047
+            ],
+            [
+              4.5052787,
+              43.8164112
+            ],
+            [
+              4.5052646,
+              43.8164139
+            ],
+            [
+              4.5052056,
+              43.816411
+            ],
+            [
+              4.5051905,
+              43.8164153
+            ],
+            [
+              4.5051757,
+              43.8164255
+            ],
+            [
+              4.5050349,
+              43.8165973
+            ],
+            [
+              4.5049936,
+              43.8166404
+            ],
+            [
+              4.5049591,
+              43.8168197
+            ],
+            [
+              4.5044469,
+              43.8168261
+            ],
+            [
+              4.5044238,
+              43.8161486
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_010",
+        "source": "osm",
+        "id_osm": 759143959,
+        "nom": "Parking Courte Durée - Gare Nimes Pont de Gard",
+        "commune": "",
+        "surface_m2": 4749,
+        "nb_vehicules_approx": 190,
+        "nb_vehicules_corrige": null,
+        "type_parking": "surface",
+        "statut_foncier": "mixte",
+        "_statut_auto": "inconnu",
+        "categorie": "transport",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5043426,
+              43.8155389
+            ],
+            [
+              4.5047835,
+              43.8155332
+            ],
+            [
+              4.504834,
+              43.8155378
+            ],
+            [
+              4.5048691,
+              43.8155482
+            ],
+            [
+              4.5049169,
+              43.8155685
+            ],
+            [
+              4.5050051,
+              43.8156278
+            ],
+            [
+              4.5052997,
+              43.8158215
+            ],
+            [
+              4.5053281,
+              43.8158528
+            ],
+            [
+              4.5053379,
+              43.8159004
+            ],
+            [
+              4.5053438,
+              43.8161019
+            ],
+            [
+              4.5044171,
+              43.8161157
+            ],
+            [
+              4.5044081,
+              43.8155944
+            ],
+            [
+              4.504393,
+              43.8155697
+            ],
+            [
+              4.5043426,
+              43.8155389
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_011",
+        "source": "osm",
+        "id_osm": 759143960,
+        "nom": "Parking Loueurs - Gare Nimes Pont de Gard - a supprimer",
+        "commune": "",
+        "surface_m2": 4093,
+        "nb_vehicules_approx": 164,
+        "nb_vehicules_corrige": null,
+        "type_parking": "surface",
+        "statut_foncier": "prive",
+        "_statut_auto": "inconnu",
+        "categorie": "transport",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5053711,
+              43.818717
+            ],
+            [
+              4.5054372,
+              43.8187115
+            ],
+            [
+              4.5061656,
+              43.8186883
+            ],
+            [
+              4.5062317,
+              43.8186727
+            ],
+            [
+              4.5062896,
+              43.8186353
+            ],
+            [
+              4.5074814,
+              43.8178248
+            ],
+            [
+              4.5076341,
+              43.8178303
+            ],
+            [
+              4.5076643,
+              43.8178314
+            ],
+            [
+              4.5076674,
+              43.8177883
+            ],
+            [
+              4.50815,
+              43.8178239
+            ],
+            [
+              4.5092267,
+              43.8184517
+            ],
+            [
+              4.5097327,
+              43.8187468
+            ],
+            [
+              4.5097864,
+              43.8187806
+            ],
+            [
+              4.5102967,
+              43.8190707
+            ],
+            [
+              4.5103274,
+              43.8190948
+            ],
+            [
+              4.5103323,
+              43.8191362
+            ],
+            [
+              4.5103062,
+              43.819195
+            ],
+            [
+              4.5102655,
+              43.8192158
+            ],
+            [
+              4.5102257,
+              43.8192149
+            ],
+            [
+              4.5096435,
+              43.8191114
+            ],
+            [
+              4.509057,
+              43.8190251
+            ],
+            [
+              4.5086718,
+              43.8189761
+            ],
+            [
+              4.5082883,
+              43.8189395
+            ],
+            [
+              4.507936,
+              43.8189094
+            ],
+            [
+              4.5074889,
+              43.8188826
+            ],
+            [
+              4.5063452,
+              43.8188567
+            ],
+            [
+              4.5063111,
+              43.8188841
+            ],
+            [
+              4.5061355,
+              43.8188857
+            ],
+            [
+              4.5061332,
+              43.8188599
+            ],
+            [
+              4.5053005,
+              43.8188857
+            ],
+            [
+              4.5052386,
+              43.8188809
+            ],
+            [
+              4.505147,
+              43.8188616
+            ],
+            [
+              4.5050873,
+              43.8188608
+            ],
+            [
+              4.5050943,
+              43.8188007
+            ],
+            [
+              4.5051929,
+              43.8187828
+            ],
+            [
+              4.5053006,
+              43.8187393
+            ],
+            [
+              4.5053711,
+              43.818717
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_012",
+        "source": "osm",
+        "id_osm": 759144010,
+        "nom": "Parking Longue Durée",
+        "commune": "",
+        "surface_m2": 26753,
+        "nb_vehicules_approx": 1070,
+        "nb_vehicules_corrige": null,
+        "type_parking": "surface",
+        "statut_foncier": "inconnu",
+        "_statut_auto": "inconnu",
+        "categorie": "",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4973179,
+              43.830861
+            ],
+            [
+              4.497178,
+              43.830915
+            ],
+            [
+              4.496935,
+              43.830791
+            ],
+            [
+              4.4968419,
+              43.8308094
+            ],
+            [
+              4.4968238,
+              43.8307716
+            ],
+            [
+              4.4970187,
+              43.8307495
+            ],
+            [
+              4.4970169,
+              43.8307001
+            ],
+            [
+              4.4971694,
+              43.8306966
+            ],
+            [
+              4.4971639,
+              43.8306257
+            ],
+            [
+              4.4972918,
+              43.8306244
+            ],
+            [
+              4.497297,
+              43.830708
+            ],
+            [
+              4.4973179,
+              43.830861
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_013",
+        "source": "osm",
+        "id_osm": 872714888,
+        "nom": "Place Maurice Matteï",
+        "commune": "",
+        "surface_m2": 632,
+        "nb_vehicules_approx": 25,
+        "nb_vehicules_corrige": 16,
+        "type_parking": "surface",
+        "statut_foncier": "mixte",
+        "_statut_auto": "public",
+        "categorie": "residentiel",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4985331,
+              43.8304748
+            ],
+            [
+              4.4983568,
+              43.8304916
+            ],
+            [
+              4.4983267,
+              43.830419
+            ],
+            [
+              4.498446,
+              43.830349
+            ],
+            [
+              4.4984686,
+              43.83037
+            ],
+            [
+              4.4985193,
+              43.8303384
+            ],
+            [
+              4.4985331,
+              43.8304748
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_014",
+        "source": "osm",
+        "id_osm": 872721142,
+        "nom": "Parking - parcelle AB1047",
+        "commune": "",
+        "surface_m2": 191,
+        "nb_vehicules_approx": 8,
+        "nb_vehicules_corrige": 6,
+        "type_parking": "surface",
+        "statut_foncier": "mixte",
+        "_statut_auto": "public",
+        "categorie": "residentiel",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4879636,
+              43.830836
+            ],
+            [
+              4.4876421,
+              43.8308347
+            ],
+            [
+              4.4876381,
+              43.8309705
+            ],
+            [
+              4.4876448,
+              43.8310629
+            ],
+            [
+              4.4876562,
+              43.8312219
+            ],
+            [
+              4.4879763,
+              43.8312189
+            ],
+            [
+              4.4879696,
+              43.8310162
+            ],
+            [
+              4.4879636,
+              43.830836
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_015",
+        "source": "osm",
+        "id_osm": 872726764,
+        "nom": "Parking complexe sportif \"2020\"",
+        "commune": "",
+        "surface_m2": 1119,
+        "nb_vehicules_approx": 45,
+        "nb_vehicules_corrige": 42,
+        "type_parking": "surface",
+        "statut_foncier": "prive",
+        "_statut_auto": "public",
+        "categorie": "scolaire",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "Interdiction",
+        "classe_ppri": "exposé",
+        "justif_ppri": "En zone PPRI d'interdiction — parking exposé, non mobilisable"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5024193,
+              43.8286776
+            ],
+            [
+              4.5023754,
+              43.8282898
+            ],
+            [
+              4.5029964,
+              43.8280686
+            ],
+            [
+              4.5031294,
+              43.828263
+            ],
+            [
+              4.5031992,
+              43.828361
+            ],
+            [
+              4.5032184,
+              43.8283929
+            ],
+            [
+              4.5031088,
+              43.8284327
+            ],
+            [
+              4.502976,
+              43.828235
+            ],
+            [
+              4.502491,
+              43.8284093
+            ],
+            [
+              4.5026317,
+              43.8286058
+            ],
+            [
+              4.5024193,
+              43.8286776
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_016",
+        "source": "osm",
+        "id_osm": 880533754,
+        "nom": "Parking Domitia",
+        "commune": "",
+        "surface_m2": 1515,
+        "nb_vehicules_approx": 61,
+        "nb_vehicules_corrige": 39,
+        "type_parking": "surface",
+        "statut_foncier": "public",
+        "_statut_auto": "public",
+        "categorie": "scolaire",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4923904,
+              43.82052
+            ],
+            [
+              4.4922786,
+              43.8201768
+            ],
+            [
+              4.4924078,
+              43.8201111
+            ],
+            [
+              4.4929368,
+              43.8207972
+            ],
+            [
+              4.4926994,
+              43.820828
+            ],
+            [
+              4.4923904,
+              43.82052
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_017",
+        "source": "osm",
+        "id_osm": 902095979,
+        "nom": "Terrain vague / friche",
+        "commune": "",
+        "surface_m2": 1619,
+        "nb_vehicules_approx": 65,
+        "nb_vehicules_corrige": 45,
+        "type_parking": "surface",
+        "statut_foncier": "prive",
+        "_statut_auto": "inconnu",
+        "categorie": "",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4988861,
+              43.8295208
+            ],
+            [
+              4.4990243,
+              43.8294968
+            ],
+            [
+              4.4990945,
+              43.8294755
+            ],
+            [
+              4.4991105,
+              43.8294981
+            ],
+            [
+              4.4991668,
+              43.8294808
+            ],
+            [
+              4.4992265,
+              43.8295079
+            ],
+            [
+              4.4992879,
+              43.8296168
+            ],
+            [
+              4.499,
+              43.829681
+            ],
+            [
+              4.4989785,
+              43.8296873
+            ],
+            [
+              4.4988861,
+              43.8295208
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_018",
+        "source": "osm",
+        "id_osm": 928211325,
+        "nom": "Parking - Rue Emile Zola",
+        "commune": "",
+        "surface_m2": 478,
+        "nb_vehicules_approx": 19,
+        "nb_vehicules_corrige": 17,
+        "type_parking": "surface",
+        "statut_foncier": "public",
+        "_statut_auto": "inconnu",
+        "categorie": "equip_public",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4943579,
+              43.8265759
+            ],
+            [
+              4.4952037,
+              43.8264835
+            ],
+            [
+              4.4951804,
+              43.8262876
+            ],
+            [
+              4.4950729,
+              43.8262983
+            ],
+            [
+              4.4945418,
+              43.8263513
+            ],
+            [
+              4.4943385,
+              43.8263716
+            ],
+            [
+              4.4943579,
+              43.8265759
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_019",
+        "source": "osm",
+        "id_osm": 928211326,
+        "nom": "Parking en graviers - Route de Beaucaire",
+        "commune": "",
+        "surface_m2": 1525,
+        "nb_vehicules_approx": 61,
+        "nb_vehicules_corrige": 55,
+        "type_parking": "surface",
+        "statut_foncier": "public",
+        "_statut_auto": "prive",
+        "categorie": "retail_park",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4763393,
+              43.8207433
+            ],
+            [
+              4.4770986,
+              43.8205764
+            ],
+            [
+              4.4770626,
+              43.8204108
+            ],
+            [
+              4.4762635,
+              43.8205134
+            ],
+            [
+              4.4763393,
+              43.8207433
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_020",
+        "source": "osm",
+        "id_osm": 931831514,
+        "nom": "Parking stade",
+        "commune": "",
+        "surface_m2": 1443,
+        "nb_vehicules_approx": 58,
+        "nb_vehicules_corrige": 50,
+        "type_parking": "surface",
+        "statut_foncier": "public",
+        "_statut_auto": "inconnu",
+        "categorie": "scolaire",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "Interdiction",
+        "classe_ppri": "exposé",
+        "justif_ppri": "En zone PPRI d'interdiction — parking exposé, non mobilisable"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4716162,
+              43.8143163
+            ],
+            [
+              4.4709021,
+              43.8142985
+            ],
+            [
+              4.4712569,
+              43.8139743
+            ],
+            [
+              4.4712925,
+              43.8139882
+            ],
+            [
+              4.4713317,
+              43.8139556
+            ],
+            [
+              4.4716331,
+              43.8139617
+            ],
+            [
+              4.4716162,
+              43.8143163
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_021",
+        "source": "osm",
+        "id_osm": 934215931,
+        "nom": "Parking complexe sportif de Manduel",
+        "commune": "",
+        "surface_m2": 1676,
+        "nb_vehicules_approx": 67,
+        "nb_vehicules_corrige": null,
+        "type_parking": "surface",
+        "statut_foncier": "public",
+        "_statut_auto": "public",
+        "categorie": "scolaire",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4720839,
+              43.8143912
+            ],
+            [
+              4.4716572,
+              43.8143894
+            ],
+            [
+              4.4716607,
+              43.8139424
+            ],
+            [
+              4.4720874,
+              43.8139441
+            ],
+            [
+              4.4720839,
+              43.8143912
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_022",
+        "source": "osm",
+        "id_osm": 934215932,
+        "nom": "Parking complexe sportif de Manduel - interieur à supprimer",
+        "commune": "",
+        "surface_m2": 1704,
+        "nb_vehicules_approx": 68,
+        "nb_vehicules_corrige": null,
+        "type_parking": "surface",
+        "statut_foncier": "prive",
+        "_statut_auto": "public",
+        "categorie": "",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4715619,
+              43.8136906
+            ],
+            [
+              4.4720561,
+              43.8136902
+            ],
+            [
+              4.4720563,
+              43.8138374
+            ],
+            [
+              4.4715853,
+              43.8138379
+            ],
+            [
+              4.4714337,
+              43.813811
+            ],
+            [
+              4.4715619,
+              43.8136906
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_023",
+        "source": "osm",
+        "id_osm": 934215933,
+        "nom": "Parking centre medical",
+        "commune": "",
+        "surface_m2": 732,
+        "nb_vehicules_approx": 29,
+        "nb_vehicules_corrige": 25,
+        "type_parking": "surface",
+        "statut_foncier": "prive",
+        "_statut_auto": "public",
+        "categorie": "autre",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4863447,
+              43.8161757
+            ],
+            [
+              4.4861812,
+              43.8160175
+            ],
+            [
+              4.4862142,
+              43.8159513
+            ],
+            [
+              4.4864055,
+              43.8158692
+            ],
+            [
+              4.4864536,
+              43.8158467
+            ],
+            [
+              4.4865036,
+              43.8158233
+            ],
+            [
+              4.4865474,
+              43.8158027
+            ],
+            [
+              4.4866163,
+              43.8158177
+            ],
+            [
+              4.4867226,
+              43.8158872
+            ],
+            [
+              4.4867408,
+              43.8159074
+            ],
+            [
+              4.486768,
+              43.8159622
+            ],
+            [
+              4.4866765,
+              43.8160829
+            ],
+            [
+              4.4866229,
+              43.8161082
+            ],
+            [
+              4.4865191,
+              43.8161418
+            ],
+            [
+              4.4863447,
+              43.8161757
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_024",
+        "source": "osm",
+        "id_osm": 956507641,
+        "nom": "Parking residence - a supprimer",
+        "commune": "",
+        "surface_m2": 1223,
+        "nb_vehicules_approx": 49,
+        "nb_vehicules_corrige": null,
+        "type_parking": "surface",
+        "statut_foncier": "prive",
+        "_statut_auto": "prive",
+        "categorie": "",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4662786,
+              43.8165446
+            ],
+            [
+              4.466343,
+              43.8165926
+            ],
+            [
+              4.4665093,
+              43.816557
+            ],
+            [
+              4.4665608,
+              43.8165934
+            ],
+            [
+              4.466579,
+              43.8165849
+            ],
+            [
+              4.4665511,
+              43.8165531
+            ],
+            [
+              4.4665983,
+              43.8165523
+            ],
+            [
+              4.4670833,
+              43.8167157
+            ],
+            [
+              4.4670607,
+              43.816742
+            ],
+            [
+              4.4668859,
+              43.8167497
+            ],
+            [
+              4.466623,
+              43.8166491
+            ],
+            [
+              4.4662915,
+              43.8166716
+            ],
+            [
+              4.4662271,
+              43.8165701
+            ],
+            [
+              4.4662786,
+              43.8165446
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_025",
+        "source": "osm",
+        "id_osm": 956507656,
+        "nom": "Parking MAHU Opticien",
+        "commune": "",
+        "surface_m2": 631,
+        "nb_vehicules_approx": 25,
+        "nb_vehicules_corrige": 16,
+        "type_parking": "surface",
+        "statut_foncier": "prive",
+        "_statut_auto": "inconnu",
+        "categorie": "commercial",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4703683,
+              43.8103929
+            ],
+            [
+              4.4704078,
+              43.8103891
+            ],
+            [
+              4.4703653,
+              43.8102571
+            ],
+            [
+              4.4703365,
+              43.8102615
+            ],
+            [
+              4.4703683,
+              43.8103929
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_026",
+        "source": "osm",
+        "id_osm": 956507668,
+        "nom": "",
+        "commune": "",
+        "surface_m2": 42,
+        "nb_vehicules_approx": 2,
+        "nb_vehicules_corrige": null,
+        "type_parking": "surface",
+        "statut_foncier": "inconnu",
+        "_statut_auto": "inconnu",
+        "categorie": "",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4600702,
+              43.8199108
+            ],
+            [
+              4.4605997,
+              43.8198611
+            ],
+            [
+              4.4605895,
+              43.8198077
+            ],
+            [
+              4.4607413,
+              43.8197911
+            ],
+            [
+              4.460712,
+              43.8196834
+            ],
+            [
+              4.4603407,
+              43.8197239
+            ],
+            [
+              4.4603522,
+              43.8197764
+            ],
+            [
+              4.4603127,
+              43.8197783
+            ],
+            [
+              4.4603012,
+              43.8197313
+            ],
+            [
+              4.460069,
+              43.8197663
+            ],
+            [
+              4.4600702,
+              43.8199108
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_027",
+        "source": "osm",
+        "id_osm": 956518517,
+        "nom": "Parking résidence - a supprimer",
+        "commune": "",
+        "surface_m2": 852,
+        "nb_vehicules_approx": 34,
+        "nb_vehicules_corrige": 30,
+        "type_parking": "surface",
+        "statut_foncier": "prive",
+        "_statut_auto": "prive",
+        "categorie": "residentiel",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4990531,
+              43.8320274
+            ],
+            [
+              4.499063,
+              43.831771
+            ],
+            [
+              4.4992046,
+              43.8317651
+            ],
+            [
+              4.500232,
+              43.831747
+            ],
+            [
+              4.5002769,
+              43.8320249
+            ],
+            [
+              4.4998125,
+              43.8320228
+            ],
+            [
+              4.4998129,
+              43.8319831
+            ],
+            [
+              4.4997426,
+              43.8319825
+            ],
+            [
+              4.499741,
+              43.831827
+            ],
+            [
+              4.499592,
+              43.831827
+            ],
+            [
+              4.499591,
+              43.831951
+            ],
+            [
+              4.4995469,
+              43.8319519
+            ],
+            [
+              4.499543,
+              43.831987
+            ],
+            [
+              4.499504,
+              43.831987
+            ],
+            [
+              4.499505,
+              43.832026
+            ],
+            [
+              4.4990531,
+              43.8320274
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_028",
+        "source": "osm",
+        "id_osm": 992499802,
+        "nom": "Parking Maison des Oeuvres ",
+        "commune": "",
+        "surface_m2": 2525,
+        "nb_vehicules_approx": 101,
+        "nb_vehicules_corrige": null,
+        "type_parking": "surface",
+        "statut_foncier": "mixte",
+        "_statut_auto": "public",
+        "categorie": "equip_public",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4873518,
+              43.8174677
+            ],
+            [
+              4.4875489,
+              43.8176862
+            ],
+            [
+              4.4880679,
+              43.8174677
+            ],
+            [
+              4.4878922,
+              43.8172528
+            ],
+            [
+              4.4878292,
+              43.8172804
+            ],
+            [
+              4.4878145,
+              43.8172654
+            ],
+            [
+              4.4874429,
+              43.8174278
+            ],
+            [
+              4.4873518,
+              43.8174677
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_029",
+        "source": "osm",
+        "id_osm": 1011329826,
+        "nom": "Parking collège Via Domitia - fermé -  a supprimer",
+        "commune": "",
+        "surface_m2": 1424,
+        "nb_vehicules_approx": 57,
+        "nb_vehicules_corrige": 45,
+        "type_parking": "surface",
+        "statut_foncier": "prive",
+        "_statut_auto": "prive",
+        "categorie": "scolaire",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5025359,
+              43.8363824
+            ],
+            [
+              4.5025359,
+              43.8363633
+            ],
+            [
+              4.5024983,
+              43.8363582
+            ],
+            [
+              4.5024698,
+              43.8363479
+            ],
+            [
+              4.5024413,
+              43.8363201
+            ],
+            [
+              4.502419,
+              43.8363237
+            ],
+            [
+              4.5023062,
+              43.8361126
+            ],
+            [
+              4.5023336,
+              43.8361031
+            ],
+            [
+              4.5023072,
+              43.8360539
+            ],
+            [
+              4.5023062,
+              43.836029
+            ],
+            [
+              4.5023458,
+              43.8359887
+            ],
+            [
+              4.5024129,
+              43.8359234
+            ],
+            [
+              4.5024149,
+              43.8359051
+            ],
+            [
+              4.502479,
+              43.8359601
+            ],
+            [
+              4.5029099,
+              43.8362196
+            ],
+            [
+              4.5029668,
+              43.8362533
+            ],
+            [
+              4.502979,
+              43.8362629
+            ],
+            [
+              4.5029475,
+              43.8362929
+            ],
+            [
+              4.5029333,
+              43.8363003
+            ],
+            [
+              4.5026548,
+              43.8363611
+            ],
+            [
+              4.5025359,
+              43.8363824
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_030",
+        "source": "osm",
+        "id_osm": 1044806202,
+        "nom": "Parking de la Halle aux sports",
+        "commune": "",
+        "surface_m2": 1475,
+        "nb_vehicules_approx": 59,
+        "nb_vehicules_corrige": 56,
+        "type_parking": "surface",
+        "statut_foncier": "public",
+        "_statut_auto": "public",
+        "categorie": "scolaire",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4793292,
+              43.8259603
+            ],
+            [
+              4.4794043,
+              43.8259497
+            ],
+            [
+              4.4795907,
+              43.8259835
+            ],
+            [
+              4.4796269,
+              43.8259032
+            ],
+            [
+              4.4794432,
+              43.8257591
+            ],
+            [
+              4.4792393,
+              43.825821
+            ],
+            [
+              4.4793292,
+              43.8259603
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_031",
+        "source": "osm",
+        "id_osm": 1090858398,
+        "nom": "Parking - parcelle AE0087",
+        "commune": "",
+        "surface_m2": 467,
+        "nb_vehicules_approx": 19,
+        "nb_vehicules_corrige": 15,
+        "type_parking": "surface",
+        "statut_foncier": "mixte",
+        "_statut_auto": "public",
+        "categorie": "residentiel",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "Prescriptions",
+        "classe_ppri": "a_analyser",
+        "justif_ppri": "En zone PPRI de prescription — à analyser finement avant classement refuge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4621019,
+              43.8157861
+            ],
+            [
+              4.4621389,
+              43.8157705
+            ],
+            [
+              4.4622236,
+              43.8156327
+            ],
+            [
+              4.4619571,
+              43.8155259
+            ],
+            [
+              4.461743,
+              43.815636
+            ],
+            [
+              4.4621019,
+              43.8157861
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_032",
+        "source": "osm",
+        "id_osm": 1090858415,
+        "nom": "Parking - Rue du Roitelet",
+        "commune": "",
+        "surface_m2": 577,
+        "nb_vehicules_approx": 23,
+        "nb_vehicules_corrige": 20,
+        "type_parking": "surface",
+        "statut_foncier": "public",
+        "_statut_auto": "inconnu",
+        "categorie": "residentiel",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4734665,
+              43.8098356
+            ],
+            [
+              4.4739779,
+              43.8098662
+            ],
+            [
+              4.4739705,
+              43.8097
+            ],
+            [
+              4.4739132,
+              43.809548
+            ],
+            [
+              4.4738334,
+              43.8093362
+            ],
+            [
+              4.4739917,
+              43.8092337
+            ],
+            [
+              4.4739166,
+              43.8092027
+            ],
+            [
+              4.4736152,
+              43.8090655
+            ],
+            [
+              4.4736028,
+              43.8089123
+            ],
+            [
+              4.4734895,
+              43.8088484
+            ],
+            [
+              4.4734671,
+              43.80981
+            ],
+            [
+              4.4734665,
+              43.8098356
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_033",
+        "source": "osm",
+        "id_osm": 1090858424,
+        "nom": "Parking école maternelle Francoise Dolto",
+        "commune": "",
+        "surface_m2": 3148,
+        "nb_vehicules_approx": 126,
+        "nb_vehicules_corrige": 65,
+        "type_parking": "surface",
+        "statut_foncier": "public",
+        "_statut_auto": "inconnu",
+        "categorie": "scolaire",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4907406,
+              43.8267524
+            ],
+            [
+              4.4907465,
+              43.8267861
+            ],
+            [
+              4.4907164,
+              43.8267889
+            ],
+            [
+              4.4907086,
+              43.8269032
+            ],
+            [
+              4.4913509,
+              43.8268519
+            ],
+            [
+              4.4913429,
+              43.8268094
+            ],
+            [
+              4.4914059,
+              43.8268007
+            ],
+            [
+              4.4913965,
+              43.826701
+            ],
+            [
+              4.4907406,
+              43.8267524
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_034",
+        "source": "osm",
+        "id_osm": 1091714660,
+        "nom": "Parking privé residence - a supprimer",
+        "commune": "",
+        "surface_m2": 877,
+        "nb_vehicules_approx": 35,
+        "nb_vehicules_corrige": 35,
+        "type_parking": "surface",
+        "statut_foncier": "prive",
+        "_statut_auto": "inconnu",
+        "categorie": "residentiel",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "Prescriptions",
+        "classe_ppri": "a_analyser",
+        "justif_ppri": "En zone PPRI de prescription — à analyser finement avant classement refuge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5061494,
+              43.8269173
+            ],
+            [
+              4.5054808,
+              43.8268996
+            ],
+            [
+              4.5055124,
+              43.8267071
+            ],
+            [
+              4.5061624,
+              43.8267208
+            ],
+            [
+              4.5061494,
+              43.8269173
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_035",
+        "source": "osm",
+        "id_osm": 1210804913,
+        "nom": "Parking residence de l'Etang - a supprimer",
+        "commune": "",
+        "surface_m2": 1148,
+        "nb_vehicules_approx": 46,
+        "nb_vehicules_corrige": 32,
+        "type_parking": "surface",
+        "statut_foncier": "prive",
+        "_statut_auto": "inconnu",
+        "categorie": "residentiel",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4729482,
+              43.8139736
+            ],
+            [
+              4.473442,
+              43.8139736
+            ],
+            [
+              4.4734389,
+              43.8140803
+            ],
+            [
+              4.4733002,
+              43.8140814
+            ],
+            [
+              4.4732879,
+              43.814311
+            ],
+            [
+              4.4734296,
+              43.8143115
+            ],
+            [
+              4.4734612,
+              43.8144238
+            ],
+            [
+              4.4729505,
+              43.8144121
+            ],
+            [
+              4.4729482,
+              43.8139736
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_036",
+        "source": "osm",
+        "id_osm": 1413864292,
+        "nom": "Parking complexe sportif de Manduel 2",
+        "commune": "",
+        "surface_m2": 1651,
+        "nb_vehicules_approx": 66,
+        "nb_vehicules_corrige": 68,
+        "type_parking": "surface",
+        "statut_foncier": "public",
+        "_statut_auto": "inconnu",
+        "categorie": "scolaire",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.495318,
+              43.835626
+            ],
+            [
+              4.495811,
+              43.835606
+            ],
+            [
+              4.495814,
+              43.835442
+            ],
+            [
+              4.495305,
+              43.835455
+            ],
+            [
+              4.495318,
+              43.835626
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_M_MANUAL_001",
+        "source": "saisie_manuelle",
+        "id_osm": null,
+        "nom": "Parcelle AE0088",
+        "commune": "",
+        "surface_m2": 750,
+        "nb_vehicules_approx": 30,
+        "nb_vehicules_corrige": 20,
+        "type_parking": "parcelle_privee",
+        "statut_foncier": "prive",
+        "_statut_auto": "inconnu",
+        "categorie": "autre",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "Prescriptions",
+        "classe_ppri": "a_analyser",
+        "justif_ppri": "En zone PPRI de prescription — à analyser finement avant classement refuge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.498437,
+              43.835332
+            ],
+            [
+              4.498636,
+              43.835308
+            ],
+            [
+              4.498537,
+              43.834904
+            ],
+            [
+              4.498327,
+              43.834933
+            ],
+            [
+              4.498437,
+              43.835332
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_M_MANUAL_002",
+        "source": "saisie_manuelle",
+        "id_osm": null,
+        "nom": "Parking résidentiel - les Vivandières 1",
+        "commune": "",
+        "surface_m2": 758,
+        "nb_vehicules_approx": 30,
+        "nb_vehicules_corrige": 14,
+        "type_parking": "aire_informelle",
+        "statut_foncier": "public",
+        "_statut_auto": "inconnu",
+        "categorie": "residentiel",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.49955,
+              43.835134
+            ],
+            [
+              4.499741,
+              43.835103
+            ],
+            [
+              4.499639,
+              43.834734
+            ],
+            [
+              4.499449,
+              43.834759
+            ],
+            [
+              4.49955,
+              43.835134
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_M_MANUAL_003",
+        "source": "saisie_manuelle",
+        "id_osm": null,
+        "nom": "Parking résidentiel - les Vivandières 2",
+        "commune": "",
+        "surface_m2": 658,
+        "nb_vehicules_approx": 26,
+        "nb_vehicules_corrige": 14,
+        "type_parking": "aire_informelle",
+        "statut_foncier": "public",
+        "_statut_auto": "inconnu",
+        "categorie": "residentiel",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.495152,
+              43.83195
+            ],
+            [
+              4.495165,
+              43.83171
+            ],
+            [
+              4.495372,
+              43.831708
+            ],
+            [
+              4.495361,
+              43.831953
+            ],
+            [
+              4.495152,
+              43.83195
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_M_MANUAL_004",
+        "source": "saisie_manuelle",
+        "id_osm": null,
+        "nom": "Place Mireille",
+        "commune": "",
+        "surface_m2": 451,
+        "nb_vehicules_approx": 18,
+        "nb_vehicules_corrige": 14,
+        "type_parking": "aire_informelle",
+        "statut_foncier": "prive",
+        "_statut_auto": "inconnu",
+        "categorie": "residentiel",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.478329,
+              43.827592
+            ],
+            [
+              4.478262,
+              43.827362
+            ],
+            [
+              4.478688,
+              43.827302
+            ],
+            [
+              4.478782,
+              43.827532
+            ],
+            [
+              4.478329,
+              43.827592
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_M_MANUAL_005",
+        "source": "saisie_manuelle",
+        "id_osm": null,
+        "nom": "",
+        "commune": "",
+        "surface_m2": 946,
+        "nb_vehicules_approx": 38,
+        "nb_vehicules_corrige": null,
+        "type_parking": "aire_informelle",
+        "statut_foncier": "inconnu",
+        "_statut_auto": "inconnu",
+        "categorie": "",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "Interdiction",
+        "classe_ppri": "exposé",
+        "justif_ppri": "En zone PPRI d'interdiction — parking exposé, non mobilisable"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.467184,
+              43.818477
+            ],
+            [
+              4.467616,
+              43.818365
+            ],
+            [
+              4.467458,
+              43.818048
+            ],
+            [
+              4.46731,
+              43.818123
+            ],
+            [
+              4.467246,
+              43.818278
+            ],
+            [
+              4.467112,
+              43.818317
+            ],
+            [
+              4.467184,
+              43.818477
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_M_MANUAL_006",
+        "source": "saisie_manuelle",
+        "id_osm": null,
+        "nom": "Parking - Rue de l'écureuil",
+        "commune": "",
+        "surface_m2": 1004,
+        "nb_vehicules_approx": 40,
+        "nb_vehicules_corrige": 23,
+        "type_parking": "parking_non_carto",
+        "statut_foncier": "mixte",
+        "_statut_auto": "inconnu",
+        "categorie": "residentiel",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.459057,
+              43.820608
+            ],
+            [
+              4.459046,
+              43.820457
+            ],
+            [
+              4.457987,
+              43.820511
+            ],
+            [
+              4.458003,
+              43.820653
+            ],
+            [
+              4.459057,
+              43.820608
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_M_MANUAL_007",
+        "source": "saisie_manuelle",
+        "id_osm": null,
+        "nom": "Parking - Parcelle BH1032",
+        "commune": "",
+        "surface_m2": 1388,
+        "nb_vehicules_approx": 56,
+        "nb_vehicules_corrige": 50,
+        "type_parking": "parking_non_carto",
+        "statut_foncier": "mixte",
+        "_statut_auto": "inconnu",
+        "categorie": "autre",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.469799,
+              43.821688
+            ],
+            [
+              4.469727,
+              43.82188
+            ],
+            [
+              4.470567,
+              43.822042
+            ],
+            [
+              4.470674,
+              43.821918
+            ],
+            [
+              4.470542,
+              43.82181
+            ],
+            [
+              4.470202,
+              43.821752
+            ],
+            [
+              4.469799,
+              43.821688
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_M_MANUAL_008",
+        "source": "saisie_manuelle",
+        "id_osm": null,
+        "nom": "Terrain vague",
+        "commune": "",
+        "surface_m2": 1660,
+        "nb_vehicules_approx": 66,
+        "nb_vehicules_corrige": 50,
+        "type_parking": "terrain_vague",
+        "statut_foncier": "prive",
+        "_statut_auto": "inconnu",
+        "categorie": "autre",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "Interdiction",
+        "classe_ppri": "exposé",
+        "justif_ppri": "En zone PPRI d'interdiction — parking exposé, non mobilisable"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.473611,
+              43.820157
+            ],
+            [
+              4.473364,
+              43.820202
+            ],
+            [
+              4.473364,
+              43.819993
+            ],
+            [
+              4.47356,
+              43.819971
+            ],
+            [
+              4.473611,
+              43.820157
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_M_MANUAL_009",
+        "source": "saisie_manuelle",
+        "id_osm": null,
+        "nom": "Parking - Impasse le Fort",
+        "commune": "",
+        "surface_m2": 398,
+        "nb_vehicules_approx": 16,
+        "nb_vehicules_corrige": 12,
+        "type_parking": "aire_informelle",
+        "statut_foncier": "public",
+        "_statut_auto": "inconnu",
+        "categorie": "residentiel",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "Prescriptions",
+        "classe_ppri": "a_analyser",
+        "justif_ppri": "En zone PPRI de prescription — à analyser finement avant classement refuge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.469637,
+              43.816482
+            ],
+            [
+              4.469791,
+              43.816416
+            ],
+            [
+              4.469822,
+              43.816373
+            ],
+            [
+              4.46975,
+              43.815992
+            ],
+            [
+              4.469672,
+              43.815986
+            ],
+            [
+              4.46955,
+              43.815997
+            ],
+            [
+              4.469637,
+              43.816482
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_M_MANUAL_010",
+        "source": "saisie_manuelle",
+        "id_osm": null,
+        "nom": "Parking école Francois Fournier",
+        "commune": "",
+        "surface_m2": 812,
+        "nb_vehicules_approx": 32,
+        "nb_vehicules_corrige": 28,
+        "type_parking": "parking_non_carto",
+        "statut_foncier": "public",
+        "_statut_auto": "inconnu",
+        "categorie": "scolaire",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.47342,
+              43.80878
+            ],
+            [
+              4.473288,
+              43.808368
+            ],
+            [
+              4.473239,
+              43.808564
+            ],
+            [
+              4.473253,
+              43.808769
+            ],
+            [
+              4.47342,
+              43.80878
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_M_MANUAL_011",
+        "source": "saisie_manuelle",
+        "id_osm": null,
+        "nom": "Terrain vague",
+        "commune": "",
+        "surface_m2": 358,
+        "nb_vehicules_approx": 14,
+        "nb_vehicules_corrige": 10,
+        "type_parking": "terrain_vague",
+        "statut_foncier": "public",
+        "_statut_auto": "inconnu",
+        "categorie": "autre",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "hors_zone",
+        "classe_ppri": "refuge_potentiel",
+        "justif_ppri": "Hors zone PPRI contraignante — candidat refuge potentiel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.483626,
+              43.82
+            ],
+            [
+              4.483355,
+              43.819879
+            ],
+            [
+              4.483567,
+              43.819649
+            ],
+            [
+              4.483771,
+              43.819776
+            ],
+            [
+              4.48379,
+              43.819858
+            ],
+            [
+              4.483626,
+              43.82
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKC_M_MANUAL_012",
+        "source": "saisie_manuelle",
+        "id_osm": null,
+        "nom": "Parking graviers - impasse pré des champs",
+        "commune": "",
+        "surface_m2": 751,
+        "nb_vehicules_approx": 30,
+        "nb_vehicules_corrige": 15,
+        "type_parking": "aire_informelle",
+        "statut_foncier": "prive",
+        "_statut_auto": "inconnu",
+        "categorie": "loisirs",
+        "notes": "",
+        "ppri_zone": "",
+        "date_maj": "2026-03-26",
+        "ppri_zone_brute": "Interdiction",
+        "classe_ppri": "exposé",
+        "justif_ppri": "En zone PPRI d'interdiction — parking exposé, non mobilisable"
+      }
+    }
+  ]
+}

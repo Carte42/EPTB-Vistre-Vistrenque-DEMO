@@ -1,0 +1,477 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.495318,
+              43.835626
+            ],
+            [
+              4.495811,
+              43.835606
+            ],
+            [
+              4.495814,
+              43.835442
+            ],
+            [
+              4.495305,
+              43.835455
+            ],
+            [
+              4.495318,
+              43.835626
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MANUAL_001",
+        "source": "saisie_manuelle",
+        "date_saisie": "2026-03-26",
+        "type_manuel": "parcelle_privee",
+        "observation": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.498437,
+              43.835332
+            ],
+            [
+              4.498636,
+              43.835308
+            ],
+            [
+              4.498537,
+              43.834904
+            ],
+            [
+              4.498327,
+              43.834933
+            ],
+            [
+              4.498437,
+              43.835332
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MANUAL_002",
+        "source": "saisie_manuelle",
+        "date_saisie": "2026-03-26",
+        "type_manuel": "aire_informelle",
+        "observation": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.49955,
+              43.835134
+            ],
+            [
+              4.499741,
+              43.835103
+            ],
+            [
+              4.499639,
+              43.834734
+            ],
+            [
+              4.499449,
+              43.834759
+            ],
+            [
+              4.49955,
+              43.835134
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MANUAL_003",
+        "source": "saisie_manuelle",
+        "date_saisie": "2026-03-26",
+        "type_manuel": "aire_informelle",
+        "observation": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.495152,
+              43.83195
+            ],
+            [
+              4.495165,
+              43.83171
+            ],
+            [
+              4.495372,
+              43.831708
+            ],
+            [
+              4.495361,
+              43.831953
+            ],
+            [
+              4.495152,
+              43.83195
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MANUAL_004",
+        "source": "saisie_manuelle",
+        "date_saisie": "2026-03-26",
+        "type_manuel": "aire_informelle",
+        "observation": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.478329,
+              43.827592
+            ],
+            [
+              4.478262,
+              43.827362
+            ],
+            [
+              4.478688,
+              43.827302
+            ],
+            [
+              4.478782,
+              43.827532
+            ],
+            [
+              4.478329,
+              43.827592
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MANUAL_005",
+        "source": "saisie_manuelle",
+        "date_saisie": "2026-03-26",
+        "type_manuel": "aire_informelle",
+        "observation": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.467184,
+              43.818477
+            ],
+            [
+              4.467616,
+              43.818365
+            ],
+            [
+              4.467458,
+              43.818048
+            ],
+            [
+              4.46731,
+              43.818123
+            ],
+            [
+              4.467246,
+              43.818278
+            ],
+            [
+              4.467112,
+              43.818317
+            ],
+            [
+              4.467184,
+              43.818477
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MANUAL_006",
+        "source": "saisie_manuelle",
+        "date_saisie": "2026-03-26",
+        "type_manuel": "parking_non_carto",
+        "observation": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.459057,
+              43.820608
+            ],
+            [
+              4.459046,
+              43.820457
+            ],
+            [
+              4.457987,
+              43.820511
+            ],
+            [
+              4.458003,
+              43.820653
+            ],
+            [
+              4.459057,
+              43.820608
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MANUAL_007",
+        "source": "saisie_manuelle",
+        "date_saisie": "2026-03-26",
+        "type_manuel": "parking_non_carto",
+        "observation": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.469799,
+              43.821688
+            ],
+            [
+              4.469727,
+              43.82188
+            ],
+            [
+              4.470567,
+              43.822042
+            ],
+            [
+              4.470674,
+              43.821918
+            ],
+            [
+              4.470542,
+              43.82181
+            ],
+            [
+              4.470202,
+              43.821752
+            ],
+            [
+              4.469799,
+              43.821688
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MANUAL_008",
+        "source": "saisie_manuelle",
+        "date_saisie": "2026-03-26",
+        "type_manuel": "terrain_vague",
+        "observation": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.473611,
+              43.820157
+            ],
+            [
+              4.473364,
+              43.820202
+            ],
+            [
+              4.473364,
+              43.819993
+            ],
+            [
+              4.47356,
+              43.819971
+            ],
+            [
+              4.473611,
+              43.820157
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MANUAL_009",
+        "source": "saisie_manuelle",
+        "date_saisie": "2026-03-26",
+        "type_manuel": "aire_informelle",
+        "observation": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.469637,
+              43.816482
+            ],
+            [
+              4.469791,
+              43.816416
+            ],
+            [
+              4.469822,
+              43.816373
+            ],
+            [
+              4.46975,
+              43.815992
+            ],
+            [
+              4.469672,
+              43.815986
+            ],
+            [
+              4.46955,
+              43.815997
+            ],
+            [
+              4.469637,
+              43.816482
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MANUAL_010",
+        "source": "saisie_manuelle",
+        "date_saisie": "2026-03-26",
+        "type_manuel": "parking_non_carto",
+        "observation": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.47342,
+              43.80878
+            ],
+            [
+              4.473288,
+              43.808368
+            ],
+            [
+              4.473239,
+              43.808564
+            ],
+            [
+              4.473253,
+              43.808769
+            ],
+            [
+              4.47342,
+              43.80878
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MANUAL_011",
+        "source": "saisie_manuelle",
+        "date_saisie": "2026-03-26",
+        "type_manuel": "terrain_vague",
+        "observation": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.483626,
+              43.82
+            ],
+            [
+              4.483355,
+              43.819879
+            ],
+            [
+              4.483567,
+              43.819649
+            ],
+            [
+              4.483771,
+              43.819776
+            ],
+            [
+              4.48379,
+              43.819858
+            ],
+            [
+              4.483626,
+              43.82
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MANUAL_012",
+        "source": "saisie_manuelle",
+        "date_saisie": "2026-03-26",
+        "type_manuel": "aire_informelle",
+        "observation": ""
+      }
+    }
+  ]
+}
