@@ -814,11 +814,11 @@
         "temps_moyen_min": 5.2,
         "voie_acces_dom": "primary",
         "classe_acces": "acces_moyen",
-        "niveau": "territorial",
-        "classe_finale": "refuge_territorial",
-        "classe_label": "Refuge territorial",
+        "niveau": null,
+        "classe_finale": "mobilisable_sous_conditions",
+        "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 190,
-        "justif_finale": "Hors zone PPRI contraignante. 190 véhicules — mobilisable sur un territoire de plusieurs communes. Accès depuis 9 îlot(s) en 5.2 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. Foncier mixte (gare SNCF) — mobilisation subordonnée à un accord préalable avec le gestionnaire. Non accessible immédiatement en cas de crise."
       }
     },
     {
@@ -1104,11 +1104,11 @@
         "temps_moyen_min": 5.2,
         "voie_acces_dom": "primary",
         "classe_acces": "acces_moyen",
-        "niveau": "territorial",
-        "classe_finale": "refuge_territorial",
-        "classe_label": "Refuge territorial",
+        "niveau": null,
+        "classe_finale": "mobilisable_sous_conditions",
+        "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 700,
-        "justif_finale": "Hors zone PPRI contraignante. 700 véhicules — mobilisable sur un territoire de plusieurs communes. Accès depuis 12 îlot(s) en 5.2 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. Parking longue durée avec barrières et système payant — non accessible immédiatement sans levée des accès. Mobilisation subordonnée à une coordination avec le gestionnaire."
       }
     },
     {
