@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/logo.png'
 import ClassementSlider from './ClassementSlider.jsx'
 import ScenarioSelector from './ScenarioSelector.jsx'
@@ -22,6 +22,7 @@ export default function Sidebar({
   showPrix2, onTogglePrix2,
 }) {
   const stats = DEMO_CLIENT ? scenarioStats(classementFinal, scenario) : null
+  const [rapportOpen, setRapportOpen] = useState(false)
 
   return (
     <div className="sidebar">
@@ -64,6 +65,60 @@ export default function Sidebar({
               data-ob-anchor="export">
               ⬇ Télécharger les données
             </button>
+          </div>
+
+          {/* Rapports par commune */}
+          <div style={{ position: 'relative', marginTop: 8 }}>
+            <button
+              className="export-btn"
+              onClick={() => setRapportOpen(o => !o)}
+              title="Télécharger le rapport par commune"
+              style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
+            >
+              <span>⬇ Télécharger le rapport par commune</span>
+              <span style={{ marginLeft: 8, fontSize: 11 }}>{rapportOpen ? '▴' : '▾'}</span>
+            </button>
+            {rapportOpen && (
+              <ul style={{
+                position: 'absolute',
+                top: '100%',
+                left: 0,
+                right: 0,
+                margin: 0,
+                padding: '4px 0',
+                listStyle: 'none',
+                background: '#1e293b',
+                border: '1px solid #334155',
+                borderRadius: '0 0 6px 6px',
+                zIndex: 200,
+                boxShadow: '0 4px 12px rgba(0,0,0,0.4)',
+              }}>
+                {[
+                  { label: 'Manduel',  file: './fiches/rapport_Manduel.pdf' },
+                  { label: 'Redessan', file: './fiches/rapport_Redessan.pdf' },
+                ].map(({ label, file }) => (
+                  <li key={label}>
+                    <a
+                      href={file}
+                      download
+                      style={{
+                        display: 'block',
+                        padding: '8px 14px',
+                        color: '#e2e8f0',
+                        textDecoration: 'none',
+                        fontSize: 13,
+                        transition: 'background 0.15s',
+                      }}
+                      onMouseEnter={e => e.currentTarget.style.background = '#334155'}
+                      onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
+                      onClick={() => setRapportOpen(false)}
+                    >
+                      {label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </>
       ) : (
