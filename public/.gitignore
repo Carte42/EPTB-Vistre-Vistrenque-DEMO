@@ -1,0 +1,2 @@
+# Règles gitignore pour le dossier déployé (dist/)
+# Ne pas exclure les PDFs — nécessaires pour le téléchargement des fiches et rapports
