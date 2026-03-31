@@ -1,5 +1,15 @@
 import React from 'react'
 import { cleanNom } from '../utils/geo.js'
+import { DEMO_CLIENT } from '../config.js'
+
+function slugifyNom(text) {
+  return String(text)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-zA-Z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+    .slice(0, 40)
+}
 
 const CLASSE_META = {
   aire_exposee: {
@@ -107,16 +117,144 @@ function Section({ title, children }) {
   )
 }
 
-export default function FicheParking({ feature, onClose, onDelete }) {
+const SCENARIO_LABELS = {
+  t20:   'T20–40 (crue fréquente)',
+  t100:  'T100 (crue de référence)',
+  t1000: 'T1000 (crue exceptionnelle)',
+}
+
+export default function FicheParking({ feature, onClose, onDelete, scenario, hasCheminement, onToggleCheminement }) {
   const p = feature?.properties || {}
-  const meta   = CLASSE_META[p.classe_finale] || CLASSE_META['mobilisable_sous_conditions']
-  const acces  = ACCES_META[p.classe_acces]
-  const sat    = SAT_META[p.saturation]
+  const meta  = CLASSE_META[p.classe_finale] || CLASSE_META['mobilisable_sous_conditions']
+  const acces = ACCES_META[p.classe_acces]
+  const sat   = SAT_META[p.saturation]
   const estMobilisable = ['refuge_territorial', 'refuge_communal', 'refuge_local'].includes(p.classe_finale)
 
+  const scenKey = scenario ? `inondable_${scenario}` : null
+  const inondableDansScenario = scenKey ? !!p[scenKey] : null
+
+  // En mode démo, si inondable dans le scénario actif → afficher "Aire exposée" plutôt que la classe structurelle
+  const metaDemo = (inondableDansScenario && DEMO_CLIENT)
+    ? CLASSE_META['aire_exposee']
+    : meta
+
+  const pdfSlug = `${p.id}_${slugifyNom(p.nom || '')}`
+  const pdfHref = `./fiches/${pdfSlug}.pdf`
+
+  // Nettoyage du justif_finale pour le mode démo :
+  // - supprime les références PPRI structurelles (déjà contextualisé par le scénario)
+  // - supprime "Pas de contre-indications"
+  function cleanJustifDemo(text) {
+    if (!text) return ''
+    return text
+      .replace(/Hors zone PPRI contraignante\.\s*/g, '')
+      .replace(/Situ[eé] en zone PPRI[^.]*\.\s*/g, '')
+      .replace(/[.,]?\s*[Nn]ote\s*:\s*Pas de contre-indications\.?/g, '')
+      .trim()
+  }
+
+  // ── Mode démo : popup allégé ────────────────────────────────────────────
+  if (DEMO_CLIENT) {
+    return (
+      <div className="carac-popup" style={{ minWidth: 260, maxWidth: 300 }}>
+        <div className="carac-popup-header" style={{ alignItems: 'flex-start' }}>
+          <div>
+            <div className="carac-popup-title" style={{ lineHeight: 1.3 }}>
+              {cleanNom(p.nom, p.id)}
+            </div>
+            <div style={{ fontSize: 10, color: '#64748b', marginTop: 2 }}>{p.commune || '—'}</div>
+          </div>
+          <button className="carac-popup-close" onClick={onClose} style={{ flexShrink: 0, marginLeft: 8 }}>✕</button>
+        </div>
+
+        <div style={{ padding: '10px 14px 12px' }}>
+
+          {/* Statut dans le scénario actif */}
+          {inondableDansScenario !== null && (
+            <div style={{
+              background: inondableDansScenario ? '#450a0a' : '#052e16',
+              border: `1px solid ${inondableDansScenario ? '#ef444466' : '#22c55e44'}`,
+              borderRadius: 6, padding: '8px 12px', marginBottom: 8,
+              display: 'flex', alignItems: 'center', gap: 8,
+            }}>
+              <span style={{ fontSize: 18, lineHeight: 1 }}>{inondableDansScenario ? '⚠' : '✓'}</span>
+              <div>
+                <div style={{ color: inondableDansScenario ? '#ef4444' : '#22c55e', fontWeight: 700, fontSize: 13 }}>
+                  {inondableDansScenario ? 'Aire inondable' : 'Aire de refuge'}
+                </div>
+                <div style={{ color: '#94a3b8', fontSize: 10, marginTop: 2 }}>
+                  {SCENARIO_LABELS[scenario] || scenario}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Classe finale — contextualisée au scénario */}
+          <div style={{
+            background: metaDemo.bg, border: `1px solid ${metaDemo.color}44`,
+            borderRadius: 6, padding: '6px 10px', marginBottom: 10,
+            display: 'flex', alignItems: 'center', gap: 8,
+          }}>
+            <span style={{ fontSize: 16, lineHeight: 1 }}>{metaDemo.icon}</span>
+            <div style={{ color: metaDemo.color, fontWeight: 700, fontSize: 12 }}>{metaDemo.label}</div>
+          </div>
+
+          {/* Capacité + accessibilité compactes */}
+          <div style={{ display: 'flex', gap: 6, marginBottom: 8, flexWrap: 'wrap' }}>
+            <div style={{ flex: 1, background: '#0f172a', borderRadius: 5, padding: '5px 8px', textAlign: 'center' }}>
+              <div style={{ color: '#f1f5f9', fontWeight: 700, fontSize: 15 }}>{p.capacite_retenue ?? '—'}</div>
+              <div style={{ color: '#64748b', fontSize: 10 }}>places</div>
+            </div>
+            {p.surface_m2 && (
+              <div style={{ flex: 1, background: '#0f172a', borderRadius: 5, padding: '5px 8px', textAlign: 'center' }}>
+                <div style={{ color: '#f1f5f9', fontWeight: 700, fontSize: 15 }}>{p.surface_m2.toLocaleString('fr-FR')}</div>
+                <div style={{ color: '#64748b', fontSize: 10 }}>m²</div>
+              </div>
+            )}
+            {inondableDansScenario ? (
+              <div style={{ flex: 1, background: '#0f172a', borderRadius: 5, padding: '5px 8px', textAlign: 'center' }}>
+                <div style={{ color: '#ef4444', fontWeight: 700, fontSize: 11 }}>Inaccessible</div>
+                <div style={{ color: '#64748b', fontSize: 10 }}>accès</div>
+              </div>
+            ) : acces ? (
+              <div style={{ flex: 1, background: '#0f172a', borderRadius: 5, padding: '5px 8px', textAlign: 'center' }}>
+                <div style={{ color: acces.color, fontWeight: 700, fontSize: 11 }}>{acces.label}</div>
+                <div style={{ color: '#64748b', fontSize: 10 }}>accès</div>
+              </div>
+            ) : null}
+          </div>
+
+          {/* Justification — nettoyée des références PPRI */}
+          {(() => { const t = cleanJustifDemo(p.justif_finale); return t ? (
+            <div style={{ fontSize: 10, color: '#94a3b8', lineHeight: 1.5, marginBottom: 10, borderTop: '1px solid #1e293b', paddingTop: 8 }}>
+              {t}
+            </div>
+          ) : null })}
+
+          {/* Boutons */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+            <a
+              href={pdfHref}
+              download
+              style={{
+                display: 'block', width: '100%', padding: '6px 0', fontSize: 11,
+                textAlign: 'center', cursor: 'pointer', textDecoration: 'none',
+                background: 'rgba(99,102,241,0.12)', border: '1px solid #6366f166',
+                borderRadius: 4, color: '#818cf8', fontWeight: 600,
+                boxSizing: 'border-box',
+              }}
+            >
+              ⬇ Télécharger la fiche
+            </a>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // ── Mode travail : popup complet ────────────────────────────────────────
   return (
     <div className="carac-popup" style={{ minWidth: 280, maxWidth: 340 }}>
-      {/* Header */}
       <div className="carac-popup-header" style={{ alignItems: 'flex-start' }}>
         <div>
           <div className="carac-popup-title" style={{ lineHeight: 1.3 }}>
@@ -129,16 +267,11 @@ export default function FicheParking({ feature, onClose, onDelete }) {
 
       <div style={{ padding: '10px 14px 12px' }}>
 
-      {/* Classe finale — bandeau principal */}
+      {/* Classe finale */}
       <div style={{
-        background: meta.bg,
-        border: `1px solid ${meta.color}44`,
-        borderRadius: 6,
-        padding: '8px 12px',
-        marginBottom: 10,
-        display: 'flex',
-        alignItems: 'center',
-        gap: 8,
+        background: meta.bg, border: `1px solid ${meta.color}44`,
+        borderRadius: 6, padding: '8px 12px', marginBottom: 10,
+        display: 'flex', alignItems: 'center', gap: 8,
       }}>
         <span style={{ fontSize: 18, lineHeight: 1 }}>{meta.icon}</span>
         <div>
@@ -147,7 +280,6 @@ export default function FicheParking({ feature, onClose, onDelete }) {
         </div>
       </div>
 
-      {/* Capacité */}
       <Section title="Capacité">
         <Row label="Véhicules retenus" value={`${p.capacite_retenue ?? '—'} véhicules`} accent="#f1f5f9" />
         {p.nb_vehicules_corrige && (
@@ -156,14 +288,12 @@ export default function FicheParking({ feature, onClose, onDelete }) {
         <Row label="Surface" value={p.surface_m2 ? `${p.surface_m2.toLocaleString('fr-FR')} m²` : null} />
       </Section>
 
-      {/* Foncier & Usage */}
       <Section title="Foncier &amp; Usage">
         <Row label="Statut foncier"  value={STATUT_LABELS[p.statut_foncier] || p.statut_foncier || '—'} />
         <Row label="Catégorie"       value={CAT_LABELS[p.categorie] || p.categorie || '—'} />
         <Row label="Type"            value={p.type_parking || '—'} />
       </Section>
 
-      {/* PPRI */}
       <Section title="Exposition PPRI">
         <Row
           label="Zone brute"
@@ -176,12 +306,11 @@ export default function FicheParking({ feature, onClose, onDelete }) {
         )}
       </Section>
 
-      {/* Accessibilité — uniquement si données disponibles */}
       {estMobilisable && p.classe_acces && (
         <Section title="Accessibilité">
           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 6 }}>
-            {acces  && <Badge label={acces.label}  color={acces.color} />}
-            {sat    && <Badge label={sat.label}    color={sat.color} />}
+            {acces && <Badge label={acces.label} color={acces.color} />}
+            {sat   && <Badge label={sat.label}   color={sat.color} />}
           </div>
           <Row label="Rayon captation"  value={p.rayon_captation_m ? `${p.rayon_captation_m} m` : null} />
           <Row label="Îlots desservis"  value={p.nb_origines != null ? `${p.nb_origines} îlot(s)` : null} />
@@ -192,7 +321,6 @@ export default function FicheParking({ feature, onClose, onDelete }) {
         </Section>
       )}
 
-      {/* Justification */}
       {p.justif_finale && (
         <Section title="Justification">
           <div style={{ fontSize: 11, color: '#cbd5e1', lineHeight: 1.5, padding: '4px 0' }}>
@@ -201,10 +329,24 @@ export default function FicheParking({ feature, onClose, onDelete }) {
         </Section>
       )}
 
-      {/* Note manuelle */}
       {p.notes && (
         <div style={{ marginTop: 8, fontSize: 10, color: '#64748b', borderTop: '1px solid #1e293b', paddingTop: 6, fontStyle: 'italic' }}>
           Note : {p.notes}
+        </div>
+      )}
+
+      {hasCheminement && (
+        <div style={{ marginTop: 10, borderTop: '1px solid #1e293b', paddingTop: 8 }}>
+          <button
+            onClick={onToggleCheminement}
+            style={{
+              width: '100%', padding: '6px 0', fontSize: 11, cursor: 'pointer',
+              background: 'transparent', border: '1px solid #22c55e66',
+              borderRadius: 4, color: '#22c55e', fontWeight: 600,
+            }}
+          >
+            ↗ Afficher / masquer le cheminement
+          </button>
         </div>
       )}
 
@@ -223,7 +365,7 @@ export default function FicheParking({ feature, onClose, onDelete }) {
         </div>
       )}
 
-      </div>{/* fin padding wrapper */}
+      </div>
     </div>
   )
 }

@@ -125,6 +125,8 @@ export default function App() {
   const [showClassementFinal, setShowClassementFinal] = useState(false)
   const [selectedFinalId, setSelectedFinalId]   = useState(null)
   const [showClassementSimple, setShowClassementSimple] = useState(DEMO_CLIENT)
+  const [scenario, setScenario]                         = useState('t100')
+  const [showPrix2, setShowPrix2]                       = useState(false)
   const [finalExcludes, setFinalExcludes]       = useState(() => {
     try { return new Set(JSON.parse(localStorage.getItem('carte42_final_excludes') || '[]')) } catch { return new Set() }
   })
@@ -377,6 +379,11 @@ export default function App() {
         totalVisible={classementFinalVisible.length}
         totalAll={classementFinal.filter(f => !finalExcludes.has(f.properties?.id)).length}
         onExport={handleFinalExport}
+        scenario={scenario}
+        onScenarioChange={setScenario}
+        classementFinal={classementFinal}
+        showPrix2={showPrix2}
+        onTogglePrix2={() => setShowPrix2(v => !v)}
       />
       <div className="map-container">
         <MapView
@@ -410,6 +417,9 @@ export default function App() {
           classementFinal={classementFinalVisible}
           showClassementFinal={showClassementFinal}
           showClassementSimple={showClassementSimple}
+          scenario={scenario}
+          showPrix2={showPrix2}
+          onTogglePrix2={() => setShowPrix2(v => !v)}
           selectedFinalId={selectedFinalId}
           onSelectFinal={id => setSelectedFinalId(prev => prev === id ? null : id)}
           onFinalDelete={handleFinalDelete}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 export default function Onboarding() {
-  const [step, setStep] = useState('welcome')  // 'welcome' | 1 | 2 | 3 | 'done'
+  const [step, setStep] = useState('welcome')
   const [cardTop2, setCardTop2] = useState(230)
   const [cardTop3, setCardTop3] = useState(430)
   const [cardTop4, setCardTop4] = useState(400)
@@ -43,6 +43,7 @@ export default function Onboarding() {
     else if (step === 1) setStep(2)
     else if (step === 2) setStep(3)
     else if (step === 3) setStep(4)
+    else if (step === 4) setStep(5)
     else setStep('done')
   }
 
@@ -58,14 +59,9 @@ export default function Onboarding() {
           <div className="ob-welcome-title">Bienvenue sur l'interface de démonstration</div>
           <div className="ob-welcome-subtitle">Cartographie des aires de refuge — Carte42</div>
           <div className="ob-welcome-text">
-            Cette interface présente les résultats de l'analyse des parkings
-            refuge en zone inondable, réalisée par Carte42 dans le cadre
-            de la Consultation 2026-03.
-            <br /><br />
-            Elle intègre le croisement PPRI, la caractérisation foncière,
-            le calcul d'accessibilité routière et le classement final
-            en cinq classes — aires exposées, aires refuge locales,
-            communales, territoriales et aires refuge sous conditions.
+            Démonstration de la méthodologie Carte42 en réponse à la Consultation 2026-03
+            de l'EPTB Vistre-Vistrenque — identification et classement des aires de stationnement
+            refuge au regard du risque inondation.
           </div>
           <button className="ob-start" onClick={next}>Découvrir →</button>
         </div>
@@ -89,17 +85,18 @@ export default function Onboarding() {
         </div>
       )}
 
-      {/* ── Étape 2 : slider ── */}
+      {/* ── Étape 2 : sélecteur de scénario ── */}
       {step === 2 && (
         <div className="ob-card ob-card--left" style={{ top: cardTop2 }}>
           <div className="ob-glow" />
           <div className="ob-arrow--left-ext">◀</div>
           <div className="ob-body">
-            <div className="ob-emoji">★</div>
-            <div className="ob-title">Filtrez par classe de refuge</div>
+            <div className="ob-emoji">🌦</div>
+            <div className="ob-title">Sélectionnez un scénario</div>
             <div className="ob-text">
-              Le slider permet de n'afficher que les classes qui vous intéressent —
-              des aires exposées jusqu'aux aires refuge territoriales de grande capacité.
+              Trois scénarios de crue : T20–40 (fréquente), T100 (référence PPRI)
+              et T1000 (exceptionnel). Chaque scénario colore les aires en vert
+              (refuge hors d'eau) ou rouge (aire inondable à évacuer).
             </div>
           </div>
           <button className="ob-ok" onClick={next}>OK, compris →</button>
@@ -112,11 +109,11 @@ export default function Onboarding() {
           <div className="ob-glow" />
           <div className="ob-body">
             <div className="ob-emoji">📥</div>
-            <div className="ob-title">Téléchargez le classement</div>
+            <div className="ob-title">Téléchargez les données</div>
             <div className="ob-text">
-              Exportez le classement final complet au format GeoJSON
+              Exportez le classement complet au format GeoJSON
               (compatible QGIS, ArcGIS) avec l'ensemble des attributs —
-              capacité, foncier, accessibilité et justification de classe.
+              capacité, foncier, accessibilité et justification.
             </div>
           </div>
           <button className="ob-ok" onClick={next}>OK, compris →</button>
@@ -124,21 +121,38 @@ export default function Onboarding() {
         </div>
       )}
 
-      {/* ── Étape 4 : légende / couches ── */}
+      {/* ── Étape 4 : légende / prix 2 ── */}
       {step === 4 && (
         <div className="ob-card ob-card--right-low">
           <div className="ob-glow" />
           <div className="ob-body">
-            <div className="ob-emoji">🗂</div>
-            <div className="ob-title">Couches de contexte</div>
+            <div className="ob-emoji">🅿</div>
+            <div className="ob-title">Activez les aires mobilisables</div>
             <div className="ob-text">
-              La légende identifie les deux périmètres affichés sur la carte.
-              Vous pouvez également activer l'aléa inondation PPRI
-              et le cadastre parcellaire depuis ce panneau.
+              Le toggle <strong>Mobilisable (prix 2)</strong> dans la légende
+              affiche les parkings privés et semi-publics activables sous conditions —
+              colorés selon leur exposition au scénario actif.
+            </div>
+          </div>
+          <button className="ob-ok" onClick={next}>OK, compris →</button>
+          <div className="ob-arrow--right-ext">▶</div>
+        </div>
+      )}
+
+      {/* ── Étape 5 : clic sur un parking ── */}
+      {step === 5 && (
+        <div className="ob-card ob-card--bottom">
+          <div className="ob-glow" />
+          <div className="ob-body">
+            <div className="ob-emoji">📋</div>
+            <div className="ob-title">Consultez la fiche de chaque parking</div>
+            <div className="ob-text">
+              Cliquez sur n'importe quel parking pour afficher ses caractéristiques
+              détaillées — statut selon le scénario, capacité, accessibilité —
+              et télécharger sa fiche action au format PDF.
             </div>
           </div>
           <button className="ob-ok" onClick={next}>C'est parti ✓</button>
-          <div className="ob-arrow--right-ext">▶</div>
         </div>
       )}
     </div>

@@ -8,26 +8,30 @@ if not exist "node_modules" (
     npm install
 )
 
-:: Lancer le serveur de dev en arrière-plan
-echo Lancement du serveur...
-start "" /b npm run dev > .dev.log 2>&1
-
-:: Attendre que Vite soit prêt
-echo En attente du serveur...
-timeout /t 3 /nobreak >nul
-:wait
-findstr /m "localhost" .dev.log >nul 2>&1
-if errorlevel 1 (
-    timeout /t 1 /nobreak >nul
-    goto wait
-)
-
-:: Ouvrir le navigateur
-start "" "http://localhost:5173"
 echo.
-echo App disponible sur http://localhost:5173
-echo Fermer cette fenetre pour arreter le serveur.
+echo  ================================
+echo   Carte42 - Detection Parkings
+echo  ================================
 echo.
+echo   [1] Mode travail  (edition, outils complets)
+echo   [2] Mode demo     (vue client EPTB)
+echo.
+set /p choix="Votre choix (1 ou 2) : "
 
-:: Garder la fenêtre ouverte (le serveur tourne en arrière-plan via npm)
+if "%choix%"=="2" goto demo
+
+:travail
+echo.
+echo Lancement en mode travail...
+start /b cmd /c "timeout /t 3 /nobreak >nul && start http://localhost:5173"
 npm run dev
+goto fin
+
+:demo
+echo.
+echo Lancement en mode demo client...
+start /b cmd /c "timeout /t 3 /nobreak >nul && start http://localhost:5173"
+set VITE_DEMO_CLIENT=true
+npm run dev
+
+:fin

@@ -139,6 +139,36 @@ const EMPRISE_STYLE = {
 // ── Bbox filter helpers (from utils) ──────────────────────────────────────
 import { inDemoBbox } from '../utils/geo.js'
 
+// ── Points d'entrée D999 / axes périphériques ─────────────────────────────
+const ACCES_ORIGINS = [
+  { id: 'D999_ouest',          lat: 43.830041, lon: 4.457246, label: 'D999 Ouest' },
+  { id: 'D999_est',            lat: 43.827020, lon: 4.506201, label: 'Route de Beaucaire (Est)' },
+  { id: 'nord_saint_gervais',  lat: 43.839981, lon: 4.494579, label: 'Route Saint-Gervais (Nord)' },
+  { id: 'sud_bellegarde',      lat: 43.804491, lon: 4.488151, label: 'Route de Bellegarde (Sud)' },
+]
+
+const ACCES_GREEN = { dark: '#166534', medium: '#16a34a', light: '#4ade80' }
+
+function makeCoupureIcon() {
+  return L.divIcon({
+    className: '',
+    iconSize: [26, 26],
+    iconAnchor: [13, 13],
+    html: `<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+      <defs>
+        <filter id="neon-w" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <line x1="4" y1="4" x2="22" y2="22" stroke="white" stroke-width="6" filter="url(#neon-w)" opacity="0.85"/>
+      <line x1="22" y1="4" x2="4" y2="22" stroke="white" stroke-width="6" filter="url(#neon-w)" opacity="0.85"/>
+      <line x1="5" y1="5" x2="21" y2="21" stroke="#111" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="21" y1="5" x2="5" y2="21" stroke="#111" stroke-width="3.5" stroke-linecap="round"/>
+    </svg>`,
+  })
+}
+
 // Masque inversé : couvre le monde avec un trou = DEMO_BBOX
 const [bS, bW, bN, bE] = DEMO_BBOX
 const BBOX_MASK = {
@@ -318,7 +348,7 @@ export default function MapView({
   accesFeatures, routesFeatures, showAcces, selectedAccesId, onSelectAcces,
   ppriFeatures, showPpriClassement, onPpriReclassify,
   classementFinal, showClassementFinal, selectedFinalId, onSelectFinal, onFinalDelete,
-  showClassementSimple,
+  showClassementSimple, scenario, showPrix2, onTogglePrix2,
   caracFeatures, caracVersion, showCarac, onCaracEdit,
   manualFeatures, isDrawingManual, onManualDrawn, onManualCancelDraw, onManualDelete,
 }) {
@@ -335,8 +365,50 @@ export default function MapView({
   const [caracPopup, setCaracPopup]   = useState(null)
   const [ppriPopup, setPpriPopup]       = useState(null)
   const [accesPopup, setAccesPopup]     = useState(null)
-  const [finalPopup, setFinalPopup]     = useState(null)
-  const [simplePopup, setSimplePopup]   = useState(null)
+  const [finalPopup, setFinalPopup]       = useState(null)
+  const [simplePopup, setSimplePopup]     = useState(null)
+  const [cheminements, setCheminements]   = useState([])
+  const [activeCheminIds, setActiveCheminIds] = useState([]) // ids parking_id visibles
+  const [aleaScenario, setAleaScenario]   = useState({})    // { t20, t100, t1000 } → features[]
+  const [accesD999, setAccesD999]         = useState([])
+  const [graphEdges, setGraphEdges]       = useState([])
+
+  useEffect(() => {
+    fetch('./data/cheminements.geojson')
+      .then(r => r.ok ? r.json() : null)
+      .then(gj => { if (gj?.features) setCheminements(gj.features) })
+      .catch(() => {})
+  }, [])
+
+  useEffect(() => {
+    if (!aleaLayers?.graph || graphEdges.length) return
+    fetch('./data/ref/osm_graph_edges.geojson')
+      .then(r => r.ok ? r.json() : null)
+      .then(gj => { if (gj?.features) setGraphEdges(gj.features) })
+      .catch(() => {})
+  }, [aleaLayers?.graph])
+
+  useEffect(() => {
+    if (!DEMO_CLIENT) return
+    fetch('./data/acces_d999.geojson')
+      .then(r => r.ok ? r.json() : null)
+      .then(gj => { if (gj?.features) setAccesD999(gj.features) })
+      .catch(() => {})
+  }, [])
+
+  // Charger les 3 couches d'aléa (mode démo uniquement)
+  useEffect(() => {
+    if (!DEMO_CLIENT) return
+    const scenarios = ['t20', 't100', 't1000']
+    scenarios.forEach(sc => {
+      fetch(`./data/alea/alea_${sc}.geojson`)
+        .then(r => r.ok ? r.json() : null)
+        .then(gj => {
+          if (gj?.features) setAleaScenario(prev => ({ ...prev, [sc]: gj.features }))
+        })
+        .catch(() => {})
+    })
+  }, [])
 
   useEffect(() => {
     const sources = { osm: './data/ref/parkings_osm.geojson', bdtopo: './data/ref/parkings_bdtopo.geojson' }
@@ -373,7 +445,6 @@ export default function MapView({
   const BASEMAPS = [
     { id: 'osm',        label: 'Plan OSM',  icon: '🗺' },
     { id: 'ortho2024',  label: 'Ortho 24',  icon: '📷' },
-    { id: 'irc2024',    label: 'IRC 24',    icon: '🌿' },
     { id: 'google2025', label: 'Google 25', icon: '🛰' },
   ]
 
@@ -401,7 +472,10 @@ export default function MapView({
       )}
 
       {DEMO_CLIENT && (
-        <MapLegend aleaLayers={aleaLayers} onToggleAleaLayer={onToggleAleaLayer} />
+        <MapLegend
+          showPrix2={showPrix2}
+          onTogglePrix2={onTogglePrix2}
+        />
       )}
 
       <MapContainer
@@ -454,6 +528,36 @@ export default function MapView({
             transparent={true}
             opacity={0.7}
             attribution="IGN — Cadastre Parcellaire Express"
+          />
+        )}
+
+        {/* Graphe routier OSM — diagnostic routing */}
+        {aleaLayers?.graph && graphEdges.length > 0 && (
+          <GeoJSON
+            key="graph-osm"
+            data={{ type: 'FeatureCollection', features: graphEdges }}
+            style={f => {
+              const color = ACCES_GREEN[f.properties?.color_key] || '#4ade80'
+              return { color, weight: 1.5, opacity: 0.7, fill: false }
+            }}
+            interactive={false}
+          />
+        )}
+
+        {/* Couche aléa scénario — démo uniquement, s'affiche sous les parkings */}
+        {showClassementSimple && scenario && aleaScenario[scenario]?.length > 0 && (
+          <GeoJSON
+            key={`alea-${scenario}`}
+            data={{ type: 'FeatureCollection', features: aleaScenario[scenario] }}
+            style={() => {
+              const styles = {
+                t20:   { color: '#fb923c', fillColor: '#fb923c', weight: 1.5, fillOpacity: 0.28, opacity: 0.6 },
+                t100:  { color: '#60a5fa', fillColor: '#60a5fa', weight: 1.5, fillOpacity: 0.32, opacity: 0.7 },
+                t1000: { color: '#a78bfa', fillColor: '#a78bfa', weight: 1.5, fillOpacity: 0.35, opacity: 0.7 },
+              }
+              return styles[scenario] || styles.t100
+            }}
+            interactive={false}
           />
         )}
 
@@ -564,25 +668,89 @@ export default function MapView({
           />
         )}
 
-        {/* Couche vue décideur — simplifiée */}
-        {showClassementSimple && classementFinal?.length > 0 && (
-          <GeoJSON
-            key={`simple-${classementFinal.length}`}
-            data={{ type: 'FeatureCollection', features: classementFinal }}
-            style={f => {
-              const cl = f.properties?.classe_finale
-              const color = FINAL_COLORS[cl] || '#64748b'
-              return { color, fillColor: color, weight: 2.5, fillOpacity: 0.28,
-                dashArray: cl === 'mobilisable_sous_conditions' ? '5 3' : null }
-            }}
-            onEachFeature={(feature, layer) => {
-              layer.on('click', e => {
-                L.DomEvent.stopPropagation(e)
-                setSimplePopup({ feature, latlng: e.latlng })
-              })
-            }}
+        {/* Couche vue démo — parkings publics colorés par scénario */}
+        {showClassementSimple && classementFinal?.length > 0 && (() => {
+          const scenKey = `inondable_${scenario || 't100'}`
+          const publicFeatures = classementFinal.filter(f => f.properties?.categorie_cctp === 'public')
+          return (
+            <GeoJSON
+              key={`simple-${publicFeatures.length}-${scenario}`}
+              data={{ type: 'FeatureCollection', features: publicFeatures }}
+              style={f => {
+                const inondable = f.properties?.[scenKey]
+                const color = inondable ? '#ef4444' : '#22c55e'
+                return { color, fillColor: color, weight: 2.5, fillOpacity: 0.32 }
+              }}
+              onEachFeature={(feature, layer) => {
+                layer.on('click', e => {
+                  L.DomEvent.stopPropagation(e)
+                  setSimplePopup({ feature, latlng: e.latlng })
+                })
+              }}
+            />
+          )
+        })()}
+
+        {/* Couche Prix 2 — aires mobilisables sous conditions, colorées par inondabilité */}
+        {showClassementSimple && showPrix2 && classementFinal?.length > 0 && (() => {
+          const prix2Features = classementFinal.filter(f => f.properties?.categorie_cctp === 'mobilisable_prix2')
+          const scenKey2 = `inondable_${scenario || 't100'}`
+          return (
+            <GeoJSON
+              key={`prix2-${prix2Features.length}-${scenario}`}
+              data={{ type: 'FeatureCollection', features: prix2Features }}
+              style={f => {
+                const inondable = f.properties?.[scenKey2]
+                const color = inondable ? '#ef4444' : '#22c55e'
+                return { color, fillColor: color, weight: 1.5, fillOpacity: 0.18, dashArray: '6 4' }
+              }}
+              onEachFeature={(feature, layer) => {
+                layer.on('click', e => {
+                  L.DomEvent.stopPropagation(e)
+                  setSimplePopup({ feature, latlng: e.latlng })
+                })
+              }}
+            />
+          )
+        })()}
+
+
+        {/* Points d'entrée D999 — toujours visibles en mode démo */}
+        {showClassementSimple && ACCES_ORIGINS.map(o => (
+          <Circle
+            key={o.id}
+            center={[o.lat, o.lon]}
+            radius={35}
+            pathOptions={{ color: '#f59e0b', fillColor: '#f59e0b', fillOpacity: 0.9, weight: 2 }}
           />
-        )}
+        ))}
+
+        {/* Routes d'accès D999 → parking sélectionné */}
+        {showClassementSimple && accesD999.length > 0 && (() => {
+          const activePid = simplePopup?.feature?.properties?.id
+          if (!activePid) return null
+          const visible = accesD999.filter(f =>
+            f.properties?.scenario === scenario &&
+            f.properties?.parking_id === activePid
+          )
+          if (!visible.length) return null
+          return (
+            <GeoJSON
+              key={`acces-${scenario}-${activePid}`}
+              data={{ type: 'FeatureCollection', features: visible }}
+              style={f => {
+                const st = f.properties?.segment_type
+                if (st === 'coupure_point') return {}
+                if (st === 'bloque')        return { color: '#ef4444', weight: 3, opacity: 0.9 }
+                if (st === 'coupure_line')  return { color: '#111111', weight: 4, opacity: 1 }
+                const color = ACCES_GREEN[f.properties?.color_key] || '#22c55e'
+                return { color, weight: 2.5, opacity: 0.85 }
+              }}
+              pointToLayer={(f, latlng) => L.marker(latlng, { icon: makeCoupureIcon() })}
+              interactive={false}
+            />
+          )
+        })()}
 
         {/* Couche classement PPRI étape 1 */}
         {showPpriClassement && ppriFeatures?.length > 0 && (
@@ -764,9 +932,17 @@ export default function MapView({
 
         {simplePopup && (
           <FloatingPanel latlng={simplePopup.latlng} wrapperRef={wrapperRef}>
-            <FicheParkingSimple
+            <FicheParking
               feature={simplePopup.feature}
-              onClose={() => setSimplePopup(null)}
+              onClose={() => { setSimplePopup(null); setActiveCheminIds([]) }}
+              scenario={scenario}
+              hasCheminement={cheminements.some(c => c.properties?.parking_id === simplePopup.feature?.properties?.id)}
+              onToggleCheminement={() => {
+                const pid = simplePopup.feature?.properties?.id
+                if (pid) setActiveCheminIds(prev =>
+                  prev.includes(pid) ? prev.filter(x => x !== pid) : [...prev, pid]
+                )
+              }}
             />
           </FloatingPanel>
         )}

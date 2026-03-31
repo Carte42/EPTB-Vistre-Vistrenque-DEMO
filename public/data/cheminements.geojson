@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [4.50281, 43.82840],
+          [4.50220, 43.82870],
+          [4.50150, 43.82920],
+          [4.50080, 43.82980],
+          [4.50010, 43.83020]
+        ]
+      },
+      "properties": {
+        "parking_id": "PKC_016",
+        "type": "acces_crise",
+        "prix": 1,
+        "label": "Cheminement piéton hors d'eau",
+        "description": "Itinéraire piéton depuis le Parking Domitia vers la Mairie de Caissargues — hors zone inondable T100.",
+        "longueur_m": 280
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [4.48800, 43.83150],
+          [4.49100, 43.83220],
+          [4.49400, 43.83300],
+          [4.49700, 43.83430],
+          [4.50000, 43.83520],
+          [4.50256, 43.83620]
+        ]
+      },
+      "properties": {
+        "parking_id": "PKC_030",
+        "type": "naufrage_route",
+        "prix": 3,
+        "label": "Itinéraire naufragés de la route",
+        "description": "Cheminement depuis la N113 (axe Nîmes–Arles) vers le Parking de la Halle aux sports — hors zone inondable de référence.",
+        "axe_source": "N113",
+        "longueur_m": 1450
+      }
+    }
+  ]
+}

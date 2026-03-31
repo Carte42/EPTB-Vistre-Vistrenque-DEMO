@@ -78,7 +78,11 @@
         "classe_finale": "refuge_local",
         "classe_label": "Refuge local",
         "capacite_retenue": 12,
-        "justif_finale": "Hors zone PPRI contraignante. 12 véhicules — mobilisable à l'échelle d'un quartier. Accès depuis 10 îlot(s) en 1.3 min en moyenne. Note : Pas de contre-indications"
+        "justif_finale": "Hors zone PPRI contraignante. 12 véhicules — mobilisable à l'échelle d'un quartier. Accès depuis 10 îlot(s) en 1.3 min en moyenne. Note : Pas de contre-indications",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": true,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -173,7 +177,11 @@
         "classe_finale": "refuge_territorial",
         "classe_label": "Refuge territorial",
         "capacite_retenue": 170,
-        "justif_finale": "Hors zone PPRI contraignante. 170 véhicules — mobilisable sur un territoire de plusieurs communes. Accès depuis 33 îlot(s) en 3.5 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. 170 véhicules — mobilisable sur un territoire de plusieurs communes. Accès depuis 33 îlot(s) en 3.5 min en moyenne.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -248,7 +256,11 @@
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 23,
-        "justif_finale": "Parking signalé comme privé / non pertinent lors de la caractérisation"
+        "justif_finale": "Parking signalé comme privé / non pertinent lors de la caractérisation",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "exclure"
       }
     },
     {
@@ -331,7 +343,11 @@
         "classe_finale": "refuge_communal",
         "classe_label": "Refuge communal",
         "capacite_retenue": 40,
-        "justif_finale": "Hors zone PPRI contraignante. 40 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 9 îlot(s) en 2.7 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. 40 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 9 îlot(s) en 2.7 min en moyenne.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -418,7 +434,11 @@
         "classe_finale": "refuge_local",
         "classe_label": "Refuge local",
         "capacite_retenue": 28,
-        "justif_finale": "Hors zone PPRI contraignante. 28 véhicules — mobilisable à l'échelle d'un quartier. Accès depuis 8 îlot(s) en 2.5 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. 28 véhicules — mobilisable à l'échelle d'un quartier. Accès depuis 8 îlot(s) en 2.5 min en moyenne.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -485,7 +505,11 @@
         "classe_finale": "refuge_communal",
         "classe_label": "Refuge communal",
         "capacite_retenue": 50,
-        "justif_finale": "Hors zone PPRI contraignante. 50 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 14 îlot(s) en 2.7 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. 50 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 14 îlot(s) en 2.7 min en moyenne.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -548,7 +572,11 @@
         "classe_finale": "aire_exposee",
         "classe_label": "Aire exposée",
         "capacite_retenue": 57,
-        "justif_finale": "Situé en zone PPRI d'interdiction (Interdiction) — parking exposé aux crues, non mobilisable comme refuge."
+        "justif_finale": "Situé en zone PPRI d'interdiction (Interdiction) — parking exposé aux crues, non mobilisable comme refuge.",
+        "inondable_t20": true,
+        "inondable_t100": true,
+        "inondable_t1000": true,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -615,7 +643,11 @@
         "classe_finale": "aire_exposee",
         "classe_label": "Aire exposée",
         "capacite_retenue": 85,
-        "justif_finale": "Situé en zone PPRI d'interdiction (Interdiction) — parking exposé aux crues, non mobilisable comme refuge."
+        "justif_finale": "Situé en zone PPRI d'interdiction (Interdiction) — parking exposé aux crues, non mobilisable comme refuge.",
+        "inondable_t20": true,
+        "inondable_t100": true,
+        "inondable_t1000": true,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -703,7 +735,11 @@
         "classe_finale": "aire_exposee",
         "classe_label": "Aire exposée",
         "capacite_retenue": 85,
-        "justif_finale": "Situé en zone PPRI de prescriptions, limitrophe d'une zone d'interdiction — parking exposé aux crues, non mobilisable comme refuge."
+        "justif_finale": "Situé en zone PPRI de prescriptions, limitrophe d'une zone d'interdiction — parking exposé aux crues, non mobilisable comme refuge.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": true,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -818,7 +854,11 @@
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 190,
-        "justif_finale": "Hors zone PPRI contraignante. Foncier mixte (gare SNCF) — mobilisation subordonnée à un accord préalable avec le gestionnaire. Non accessible immédiatement en cas de crise."
+        "justif_finale": "Hors zone PPRI contraignante. Foncier mixte (gare SNCF) — mobilisation subordonnée à un accord préalable avec le gestionnaire. Non accessible immédiatement en cas de crise.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -917,7 +957,11 @@
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 164,
-        "justif_finale": "Parking signalé comme privé / non pertinent lors de la caractérisation"
+        "justif_finale": "Parking signalé comme privé / non pertinent lors de la caractérisation",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "exclure"
       }
     },
     {
@@ -1108,7 +1152,11 @@
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 700,
-        "justif_finale": "Hors zone PPRI contraignante. Parking longue durée avec barrières et système payant — non accessible immédiatement sans levée des accès. Mobilisation subordonnée à une coordination avec le gestionnaire."
+        "justif_finale": "Hors zone PPRI contraignante. Parking longue durée avec barrières et système payant — non accessible immédiatement sans levée des accès. Mobilisation subordonnée à une coordination avec le gestionnaire.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -1199,7 +1247,11 @@
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 16,
-        "justif_finale": "Foncier mixte à usage résidentiel — accès non garanti en situation de crise"
+        "justif_finale": "Foncier mixte à usage résidentiel — accès non garanti en situation de crise",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -1261,16 +1313,20 @@
         "rayon_captation_m": 520,
         "nb_origines": 1,
         "demande_veh": 6,
-        "ratio_capacite": 1.0,
+        "ratio_capacite": 1,
         "saturation": "bien_dimensionne",
-        "temps_moyen_min": 2.0,
+        "temps_moyen_min": 2,
         "voie_acces_dom": "secondary",
         "classe_acces": "tres_accessible",
         "niveau": null,
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 6,
-        "justif_finale": "Foncier mixte à usage résidentiel — accès non garanti en situation de crise"
+        "justif_finale": "Foncier mixte à usage résidentiel — accès non garanti en situation de crise",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -1337,7 +1393,11 @@
         "classe_finale": "aire_exposee",
         "classe_label": "Aire exposée",
         "capacite_retenue": 42,
-        "justif_finale": "Situé en zone PPRI d'interdiction (Interdiction) — parking exposé aux crues, non mobilisable comme refuge."
+        "justif_finale": "Situé en zone PPRI d'interdiction (Interdiction) — parking exposé aux crues, non mobilisable comme refuge.",
+        "inondable_t20": false,
+        "inondable_t100": true,
+        "inondable_t1000": true,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -1424,7 +1484,11 @@
         "classe_finale": "refuge_communal",
         "classe_label": "Refuge communal",
         "capacite_retenue": 39,
-        "justif_finale": "Hors zone PPRI contraignante. 39 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 7 îlot(s) en 3.2 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. 39 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 7 îlot(s) en 3.2 min en moyenne.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -1491,7 +1555,11 @@
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 45,
-        "justif_finale": "Statut foncier privé — accès non garanti sans accord du propriétaire"
+        "justif_finale": "Statut foncier privé — accès non garanti sans accord du propriétaire",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -1574,7 +1642,11 @@
         "classe_finale": "refuge_local",
         "classe_label": "Refuge local",
         "capacite_retenue": 17,
-        "justif_finale": "Hors zone PPRI contraignante. 17 véhicules — mobilisable à l'échelle d'un quartier. Accès depuis 3 îlot(s) en 2.4 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. 17 véhicules — mobilisable à l'échelle d'un quartier. Accès depuis 3 îlot(s) en 2.4 min en moyenne.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -1645,7 +1717,11 @@
         "classe_finale": "refuge_communal",
         "classe_label": "Refuge communal",
         "capacite_retenue": 55,
-        "justif_finale": "Hors zone PPRI contraignante. 55 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 20 îlot(s) en 2.9 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. 55 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 20 îlot(s) en 2.9 min en moyenne.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -1700,7 +1776,11 @@
         "classe_finale": "aire_exposee",
         "classe_label": "Aire exposée",
         "capacite_retenue": 50,
-        "justif_finale": "Situé en zone PPRI d'interdiction (Interdiction) — parking exposé aux crues, non mobilisable comme refuge."
+        "justif_finale": "Situé en zone PPRI d'interdiction (Interdiction) — parking exposé aux crues, non mobilisable comme refuge.",
+        "inondable_t20": true,
+        "inondable_t100": true,
+        "inondable_t1000": true,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -1771,7 +1851,11 @@
         "classe_finale": "refuge_communal",
         "classe_label": "Refuge communal",
         "capacite_retenue": 67,
-        "justif_finale": "Hors zone PPRI contraignante. 67 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 25 îlot(s) en 2.9 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. 67 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 25 îlot(s) en 2.9 min en moyenne.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": true,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -1834,7 +1918,11 @@
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 68,
-        "justif_finale": "Statut foncier privé — accès non garanti sans accord du propriétaire"
+        "justif_finale": "Statut foncier privé — accès non garanti sans accord du propriétaire",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": true,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -1892,7 +1980,7 @@
         "rayon_captation_m": 1061,
         "nb_origines": 7,
         "demande_veh": 25,
-        "ratio_capacite": 1.0,
+        "ratio_capacite": 1,
         "saturation": "bien_dimensionne",
         "temps_moyen_min": 2.2,
         "voie_acces_dom": "tertiary",
@@ -1901,7 +1989,11 @@
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 25,
-        "justif_finale": "Statut foncier privé — accès non garanti sans accord du propriétaire"
+        "justif_finale": "Statut foncier privé — accès non garanti sans accord du propriétaire",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": true,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -2004,7 +2096,11 @@
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 49,
-        "justif_finale": "Parking signalé comme privé / non pertinent lors de la caractérisation"
+        "justif_finale": "Parking signalé comme privé / non pertinent lors de la caractérisation",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "exclure"
       }
     },
     {
@@ -2103,7 +2199,11 @@
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 16,
-        "justif_finale": "Statut foncier privé — accès non garanti sans accord du propriétaire"
+        "justif_finale": "Statut foncier privé — accès non garanti sans accord du propriétaire",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": true,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -2157,7 +2257,7 @@
         "rayon_captation_m": 300,
         "nb_origines": 0,
         "demande_veh": 0,
-        "ratio_capacite": 0.0,
+        "ratio_capacite": 0,
         "saturation": "sous_sollicite",
         "temps_moyen_min": 0,
         "voie_acces_dom": "inconnu",
@@ -2166,7 +2266,11 @@
         "classe_finale": "refuge_local",
         "classe_label": "Refuge local",
         "capacite_retenue": 2,
-        "justif_finale": "Hors zone PPRI contraignante. 2 véhicules — mobilisable à l'échelle d'un quartier. "
+        "justif_finale": "Hors zone PPRI contraignante. 2 véhicules — mobilisable à l'échelle d'un quartier. ",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -2253,7 +2357,11 @@
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 30,
-        "justif_finale": "Parking signalé comme privé / non pertinent lors de la caractérisation"
+        "justif_finale": "Parking signalé comme privé / non pertinent lors de la caractérisation",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": true,
+        "categorie_cctp": "exclure"
       }
     },
     {
@@ -2353,14 +2461,18 @@
         "demande_veh": 180,
         "ratio_capacite": 1.78,
         "saturation": "sur_sollicite",
-        "temps_moyen_min": 3.0,
+        "temps_moyen_min": 3,
         "voie_acces_dom": "primary",
         "classe_acces": "tres_accessible",
         "niveau": "territorial",
         "classe_finale": "refuge_territorial",
         "classe_label": "Refuge territorial",
         "capacite_retenue": 101,
-        "justif_finale": "Hors zone PPRI contraignante. 101 véhicules — mobilisable sur un territoire de plusieurs communes. Accès depuis 20 îlot(s) en 3.0 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. 101 véhicules — mobilisable sur un territoire de plusieurs communes. Accès depuis 20 îlot(s) en 3.0 min en moyenne.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -2428,14 +2540,18 @@
         "demande_veh": 61,
         "ratio_capacite": 1.36,
         "saturation": "sur_sollicite",
-        "temps_moyen_min": 3.0,
+        "temps_moyen_min": 3,
         "voie_acces_dom": "primary",
         "classe_acces": "tres_accessible",
         "niveau": null,
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 45,
-        "justif_finale": "Parking signalé comme privé / non pertinent lors de la caractérisation"
+        "justif_finale": "Parking signalé comme privé / non pertinent lors de la caractérisation",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "exclure"
       }
     },
     {
@@ -2562,7 +2678,11 @@
         "classe_finale": "refuge_communal",
         "classe_label": "Refuge communal",
         "capacite_retenue": 56,
-        "justif_finale": "Hors zone PPRI contraignante. 56 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 11 îlot(s) en 2.5 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. 56 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 11 îlot(s) en 2.5 min en moyenne.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -2626,7 +2746,11 @@
         "classe_finale": "aire_exposee",
         "classe_label": "Aire exposée",
         "capacite_retenue": 15,
-        "justif_finale": "Situé en zone PPRI de prescriptions, limitrophe d'une zone d'interdiction — parking exposé aux crues, non mobilisable comme refuge."
+        "justif_finale": "Situé en zone PPRI de prescriptions, limitrophe d'une zone d'interdiction — parking exposé aux crues, non mobilisable comme refuge.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": true,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -2684,7 +2808,7 @@
         "rayon_captation_m": 949,
         "nb_origines": 7,
         "demande_veh": 20,
-        "ratio_capacite": 1.0,
+        "ratio_capacite": 1,
         "saturation": "bien_dimensionne",
         "temps_moyen_min": 1.9,
         "voie_acces_dom": "tertiary",
@@ -2693,7 +2817,11 @@
         "classe_finale": "refuge_local",
         "classe_label": "Refuge local",
         "capacite_retenue": 20,
-        "justif_finale": "Hors zone PPRI contraignante. 20 véhicules — mobilisable à l'échelle d'un quartier. Accès depuis 7 îlot(s) en 1.9 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. 20 véhicules — mobilisable à l'échelle d'un quartier. Accès depuis 7 îlot(s) en 1.9 min en moyenne.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": true,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -2784,7 +2912,11 @@
         "classe_finale": "refuge_communal",
         "classe_label": "Refuge communal",
         "capacite_retenue": 65,
-        "justif_finale": "Hors zone PPRI contraignante. 65 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 11 îlot(s) en 3.3 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. 65 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 11 îlot(s) en 3.3 min en moyenne.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -2857,14 +2989,18 @@
         "demande_veh": 92,
         "ratio_capacite": 2.63,
         "saturation": "sur_sollicite",
-        "temps_moyen_min": 3.0,
+        "temps_moyen_min": 3,
         "voie_acces_dom": "primary",
         "classe_acces": "accessible",
         "niveau": null,
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 35,
-        "justif_finale": "Parking signalé comme privé / non pertinent lors de la caractérisation"
+        "justif_finale": "Parking signalé comme privé / non pertinent lors de la caractérisation",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "exclure"
       }
     },
     {
@@ -2927,7 +3063,11 @@
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 32,
-        "justif_finale": "Parking signalé comme privé / non pertinent lors de la caractérisation"
+        "justif_finale": "Parking signalé comme privé / non pertinent lors de la caractérisation",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "exclure"
       }
     },
     {
@@ -3006,7 +3146,11 @@
         "classe_finale": "refuge_communal",
         "classe_label": "Refuge communal",
         "capacite_retenue": 68,
-        "justif_finale": "Hors zone PPRI contraignante. 68 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 25 îlot(s) en 3.3 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. 68 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 25 îlot(s) en 3.3 min en moyenne.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": true,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -3070,7 +3214,11 @@
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 20,
-        "justif_finale": "Statut foncier privé — accès non garanti sans accord du propriétaire"
+        "justif_finale": "Statut foncier privé — accès non garanti sans accord du propriétaire",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -3133,7 +3281,11 @@
         "classe_finale": "refuge_local",
         "classe_label": "Refuge local",
         "capacite_retenue": 14,
-        "justif_finale": "Hors zone PPRI contraignante. 14 véhicules — mobilisable à l'échelle d'un quartier. Accès depuis 5 îlot(s) en 1.5 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. 14 véhicules — mobilisable à l'échelle d'un quartier. Accès depuis 5 îlot(s) en 1.5 min en moyenne.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -3196,7 +3348,11 @@
         "classe_finale": "refuge_local",
         "classe_label": "Refuge local",
         "capacite_retenue": 14,
-        "justif_finale": "Hors zone PPRI contraignante. 14 véhicules — mobilisable à l'échelle d'un quartier. Accès depuis 4 îlot(s) en 1.4 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. 14 véhicules — mobilisable à l'échelle d'un quartier. Accès depuis 4 îlot(s) en 1.4 min en moyenne.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -3259,7 +3415,11 @@
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 14,
-        "justif_finale": "Statut foncier privé — accès non garanti sans accord du propriétaire"
+        "justif_finale": "Statut foncier privé — accès non garanti sans accord du propriétaire",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -3314,7 +3474,11 @@
         "classe_finale": "aire_exposee",
         "classe_label": "Aire exposée",
         "capacite_retenue": 38,
-        "justif_finale": "Situé en zone PPRI d'interdiction (Interdiction) — parking exposé aux crues, non mobilisable comme refuge."
+        "justif_finale": "Situé en zone PPRI d'interdiction (Interdiction) — parking exposé aux crues, non mobilisable comme refuge.",
+        "inondable_t20": true,
+        "inondable_t100": true,
+        "inondable_t1000": true,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -3385,7 +3549,11 @@
         "classe_finale": "mobilisable_sous_conditions",
         "classe_label": "Mobilisable sous conditions",
         "capacite_retenue": 23,
-        "justif_finale": "Foncier mixte à usage résidentiel — accès non garanti en situation de crise"
+        "justif_finale": "Foncier mixte à usage résidentiel — accès non garanti en situation de crise",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": true,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -3441,14 +3609,18 @@
         "demande_veh": 78,
         "ratio_capacite": 1.56,
         "saturation": "sur_sollicite",
-        "temps_moyen_min": 3.0,
+        "temps_moyen_min": 3,
         "voie_acces_dom": "tertiary",
         "classe_acces": "accessible",
         "niveau": "communal",
         "classe_finale": "refuge_communal",
         "classe_label": "Refuge communal",
         "capacite_retenue": 50,
-        "justif_finale": "Hors zone PPRI contraignante. 50 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 19 îlot(s) en 3.0 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. 50 véhicules — mobilisable à l'échelle d'une commune. Accès depuis 19 îlot(s) en 3.0 min en moyenne.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": true,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -3511,7 +3683,11 @@
         "classe_finale": "aire_exposee",
         "classe_label": "Aire exposée",
         "capacite_retenue": 50,
-        "justif_finale": "Situé en zone PPRI d'interdiction (Interdiction) — parking exposé aux crues, non mobilisable comme refuge."
+        "justif_finale": "Situé en zone PPRI d'interdiction (Interdiction) — parking exposé aux crues, non mobilisable comme refuge.",
+        "inondable_t20": true,
+        "inondable_t100": true,
+        "inondable_t1000": true,
+        "categorie_cctp": "mobilisable_prix2"
       }
     },
     {
@@ -3567,7 +3743,11 @@
         "classe_finale": "aire_exposee",
         "classe_label": "Aire exposée",
         "capacite_retenue": 12,
-        "justif_finale": "Situé en zone PPRI de prescriptions, limitrophe d'une zone d'interdiction — parking exposé aux crues, non mobilisable comme refuge."
+        "justif_finale": "Situé en zone PPRI de prescriptions, limitrophe d'une zone d'interdiction — parking exposé aux crues, non mobilisable comme refuge.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": true,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -3638,7 +3818,11 @@
         "classe_finale": "refuge_local",
         "classe_label": "Refuge local",
         "capacite_retenue": 28,
-        "justif_finale": "Hors zone PPRI contraignante. 28 véhicules — mobilisable à l'échelle d'un quartier. Accès depuis 15 îlot(s) en 1.9 min en moyenne."
+        "justif_finale": "Hors zone PPRI contraignante. 28 véhicules — mobilisable à l'échelle d'un quartier. Accès depuis 15 îlot(s) en 1.9 min en moyenne.",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": true,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -3692,7 +3876,7 @@
         "rayon_captation_m": 671,
         "nb_origines": 0,
         "demande_veh": 0,
-        "ratio_capacite": 0.0,
+        "ratio_capacite": 0,
         "saturation": "sous_sollicite",
         "temps_moyen_min": 0,
         "voie_acces_dom": "inconnu",
@@ -3701,7 +3885,11 @@
         "classe_finale": "refuge_local",
         "classe_label": "Refuge local",
         "capacite_retenue": 10,
-        "justif_finale": "Hors zone PPRI contraignante. 10 véhicules — mobilisable à l'échelle d'un quartier. "
+        "justif_finale": "Hors zone PPRI contraignante. 10 véhicules — mobilisable à l'échelle d'un quartier. ",
+        "inondable_t20": false,
+        "inondable_t100": false,
+        "inondable_t1000": false,
+        "categorie_cctp": "public"
       }
     },
     {
@@ -3760,7 +3948,11 @@
         "classe_finale": "aire_exposee",
         "classe_label": "Aire exposée",
         "capacite_retenue": 15,
-        "justif_finale": "Situé en zone PPRI d'interdiction (Interdiction) — parking exposé aux crues, non mobilisable comme refuge."
+        "justif_finale": "Situé en zone PPRI d'interdiction (Interdiction) — parking exposé aux crues, non mobilisable comme refuge.",
+        "inondable_t20": true,
+        "inondable_t100": true,
+        "inondable_t1000": true,
+        "categorie_cctp": "mobilisable_prix2"
       }
     }
   ]

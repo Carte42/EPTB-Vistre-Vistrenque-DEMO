@@ -258,7 +258,7 @@ body {
   padding: 6px 12px;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -267,7 +267,7 @@ body {
   white-space: nowrap;
 }
 
-.basemap-switch-icon { font-size: 18px; line-height: 1; }
+.basemap-switch-icon { font-size: 22px; line-height: 1; }
 
 .basemap-switch-btn:hover {
   background: rgba(126, 179, 255, 0.12);
